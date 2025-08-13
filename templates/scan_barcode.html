@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>📷 Scan Student Barcode</title>
+    <script src="https://serratus.github.io/quaggaJS/examples/js/quagga.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        #scanner {
+            width: 400px;
+            height: 300px;
+            margin: 20px auto;
+            position: relative;
+            border: 4px solid #3498db;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        #scan-line {
+            width: 100%;
+            height: 2px;
+            background: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: scan 2s infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes scan {
+            0% { top: 0; }
+            100% { top: 100%; }
+        }
+
+        #status {
+            font-size: 18px;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #fff;
+            display: inline-block;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        #rescan {
+            margin-top: 20px;
+            display: none;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #rescan:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>📷 Scan Student Barcode</h2>
+    <div id="scanner">
+        <div id="scan-line"></div>
+    </div>
+    <p id="status">📡 Initializing camera...</p>
+    <button id="rescan" onclick="startScanner()">🔄 Scan Again</button>
+
+    <script>
+        function startScanner() {
+            document.getElementById("status").innerText = "📡 Scanning for barcode...";
+            document.getElementById("rescan").style.display = "none";
+
+            Quagga.init({
+                inputStream: {
+                    name: "Live",
+                    type: "LiveStream",
+                    target: document.querySelector('#scanner'),
+                    constraints: {
+                        width: 400,
+                        height: 300,
+                        facingMode: "environment" // back camera
+                    }
+                },
+                decoder: {
+                    readers: ["code_128_reader"]
+                }
+            }, function(err) {
+                if (err) {
+                    console.error("Quagga error:", err);
+                    document.getElementById("status").innerText = "❌ Camera error.";
+                    return;
+                }
+                Quagga.start();
+            });
+
+            Quagga.onDetected(function(result) {
+                let code = result.codeResult.code;
+                document.getElementById("status").innerHTML = `📦 Barcode Detected: <strong>${code}</strong>`;
+                Quagga.stop(); // Stop scanning
+                document.getElementById("rescan").style.display = "inline-block";
+
+                // Check roll in backend
+                fetch(`/check-roll/?roll=${code}`)
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.exists) {
+                            document.getElementById("status").innerHTML =
+                                `✅ <strong>Student Found</strong><br>Name: ${data.name}<br>Email: ${data.email}<br>Roll: ${data.roll}`;
+                        } else {
+                            document.getElementById("status").innerHTML =
+                                "❌ Student not found.";
+                        }
+                    })
+                    .catch(err => {
+                        console.error("Fetch error:", err);
+                        document.getElementById("status").innerText = "❌ Error contacting server.";
+                    });
+            });
+        }
+
+        // Start scanning on page load
+        window.onload = startScanner;
+    </script>
+
+</body>
+</html>

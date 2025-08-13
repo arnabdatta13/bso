@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Checker Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        :root {
+            --primary-blue: #1a73e8;
+            --dark-blue: #0d47a1;
+            --light-blue: #e8f0fe;
+            --green: #34a853;
+            --orange: #f57c00;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #343a40;
+            --text: #212529;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            background: linear-gradient(135deg, var(--primary-blue), var(--green));
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+        }
+
+        .logo-text {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary-blue);
+            letter-spacing: -0.5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            color: var(--white);
+            padding: 100px 0 80px;
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.2;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        /* Search Section */
+        .search-section {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: -70px auto 60px;
+            position: relative;
+            z-index: 10;
+            transition: var(--transition);
+        }
+
+        .search-section:hover {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary-blue);
+            font-size: 2.3rem;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-blue), var(--green));
+            margin: 15px auto 0;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--dark-gray);
+            font-size: 1.1rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid var(--medium-gray);
+            border-radius: 10px;
+            font-size: 17px;
+            transition: var(--transition);
+            background-color: var(--light-gray);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-blue);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.15);
+            background-color: var(--white);
+        }
+
+        .dob-fields {
+            display: flex;
+            gap: 20px;
+        }
+
+        .dob-fields .form-group {
+            flex: 1;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 32px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .btn i {
+            font-size: 20px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, var(--primary-blue), var(--dark-blue));
+            color: var(--white);
+            width: 100%;
+            box-shadow: 0 6px 15px rgba(26, 115, 232, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(26, 115, 232, 0.4);
+        }
+
+        .btn-download {
+            background: linear-gradient(to right, var(--green), #2a8d47);
+            color: var(--white);
+            padding: 14px 30px;
+            font-size: 17px;
+            box-shadow: 0 6px 15px rgba(52, 168, 83, 0.3);
+        }
+
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(52, 168, 83, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--medium-gray);
+            color: var(--dark-gray);
+        }
+
+        .btn-secondary:hover {
+            background: #d8dde1;
+        }
+
+        /* Result Section */
+        .result-section {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+            max-width: 1000px;
+            margin: 0 auto 60px;
+            display: none;
+            transition: var(--transition);
+        }
+
+        .result-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .user-card {
+            background: linear-gradient(to bottom right, var(--light-gray), var(--white));
+            border-radius: var(--radius);
+            padding: 40px;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--primary-blue);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .user-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 25px;
+            font-size: 2rem;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .user-card h3::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-blue);
+            border-radius: 3px;
+        }
+
+        .user-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 25px;
+        }
+
+        .detail-item {
+            margin-bottom: 20px;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: var(--dark-gray);
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .detail-value {
+            font-size: 19px;
+            color: #495057;
+            font-weight: 500;
+            padding: 10px 15px;
+            background-color: rgba(233, 236, 239, 0.5);
+            border-radius: 8px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .status-active {
+            background-color: rgba(52, 168, 83, 0.15);
+            color: var(--green);
+        }
+
+        .status-pending {
+            background-color: rgba(245, 124, 0, 0.15);
+            color: var(--orange);
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Features Section */
+        .features-section {
+            max-width: 1200px;
+            margin: 80px auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 35px 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: var(--white);
+        }
+
+        .feature-icon.blue {
+            background: linear-gradient(135deg, var(--primary-blue), #3d8bfd);
+        }
+
+        .feature-icon.green {
+            background: linear-gradient(135deg, var(--green), #5fd068);
+        }
+
+        .feature-icon.orange {
+            background: linear-gradient(135deg, var(--orange), #ff9a3d);
+        }
+
+        .feature-card h4 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+
+        .feature-card p {
+            color: #6c757d;
+            font-size: 17px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            padding: 50px 0 30px;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-column h4 {
+            font-size: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h4::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-blue);
+            border-radius: 3px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #ced4da;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            transform: translateX(5px);
+        }
+
+        .footer-links i {
+            color: var(--primary-blue);
+            font-size: 14px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #495057;
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 40px;
+            border-top: 1px solid #495057;
+            color: #adb5bd;
+            font-size: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .search-section {
+                padding: 40px 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 0 60px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .dob-fields {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .result-section,
+            .user-card {
+                padding: 30px;
+            }
+            
+            .actions {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo-text {
+                font-size: 22px;
+            }
+            
+            .logo-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 20px;
+            }
+            
+            .hero {
+                padding: 70px 0 50px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .search-section {
+                margin-top: -50px;
+                padding: 30px 20px;
+            }
+            
+            .feature-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <img src="/static/image.png" alt="Logo" style="width: 100%; height: 100%; border-radius: 50%;">
+                </div>
+                <div class="logo-text">Bangladesh Space Olympiad</div>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Verify Your Registration Status Instantly</h1>
+            <p>Check your registration details securely with our advanced verification system</p>
+            
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="searchSection" class="search-section">
+    <h2 class="section-title">Check Your Registration</h2>
+    <form id="registrationForm">
+        <div class="form-group">
+            <label for="rollNumber"><i class="fas fa-id-card"></i> Roll Number</label>
+            <input type="text" id="rollNumber" class="form-control" placeholder="Enter your roll number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob"><i class="fas fa-calendar-alt"></i> Date of Birth</label>
+            <div class="dob-fields">
+                <input type="number" id="day" class="form-control" placeholder="DD" min="1" max="31" required>
+                <input type="number" id="month" class="form-control" placeholder="MM" min="1" max="12" required>
+                <input type="number" id="year" class="form-control" placeholder="YYYY" min="1900" max="2025" required>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-search"></i> Verify Registration
+        </button>
+    </form>
+</section>
+<section class="result-section" id="resultSection" style="display: none;">
+    <h2 class="section-title">Registration Details</h2>
+    <div class="user-card">
+        <div class="user-details">
+            <div class="detail-item"><span class="detail-label">Full Name:</span> <span id="userName"></span></div>
+            <div class="detail-item"><span class="detail-label">Roll Number:</span> <span id="userRoll"></span></div>
+            <div class="detail-item"><span class="detail-label">Date of Birth:</span> <span id="userDOB"></span></div>
+            <div class="detail-item"><span class="detail-label">Email:</span> <span id="userEmail"></span></div>
+            <div class="detail-item"><span class="detail-label">Phone:</span> <span id="userPhone"></span></div>
+            <div class="detail-item"><span class="detail-label">Class:</span> <span id="userClass"></span></div>
+            <div class="detail-item"><span class="detail-label">Category:</span> <span id="userCategory"></span></div>
+            <div class="detail-item"><span class="detail-label">Segments:</span> <span id="userSegments"></span></div>
+        </div>
+    </div>
+
+    <!-- Barcode Section -->
+    <div class="barcode-section" style="text-align:center; margin-bottom: 30px; display: none;" id="barcodeSection">
+        <h3 style="margin-bottom: 15px; color: var(--primary-blue);">Your Barcode</h3>
+        <img id="barcodeImage" alt="Student Barcode" style="max-width: 300px; height: auto; border: 2px solid #ccc; border-radius: 8px; padding: 10px; background: white;">
+    </div>
+
+    <div class="actions">
+        <button class="btn btn-success" id="downloadBtn"><i class="fas fa-download"></i> Download PDF</button>
+        <button class="btn btn-secondary" id="newSearchBtn"><i class="fas fa-redo"></i> New Search</button>
+    </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>About Bangladesh Space Research Society</h4>
+        <p>
+          The Bangladesh Space Research Society (BSRS) supports test and registration operations for the Bangladesh Space Olympiad.
+          For test-related queries, please use the official contacts below.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="{% url "home"%}"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact (BSRS)</h4>
+        <ul class="footer-links">
+          <li>
+            <a href="https://www.facebook.com/BSRS19" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook"></i> facebook.com/BSRS19
+            </a>
+          </li>
+          <li>
+            <a href="tel:01575080885"><i class="fas fa-phone"></i> 01575-080885</a>
+          </li>
+          <li>
+            <a href="mailto:bsrs.society@gmail.com"><i class="fas fa-envelope"></i> bsrs.society@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy; 2025 Bangladesh Space Research Society. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('registrationForm');
+        const resultSection = document.getElementById('resultSection');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const newSearchBtn = document.getElementById('newSearchBtn');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const rollNumber = document.getElementById('rollNumber').value;
+            const day = document.getElementById('day').value.padStart(2, '0');
+            const month = document.getElementById('month').value.padStart(2, '0');
+            const year = document.getElementById('year').value;
+            const dob = `${year}-${month}-${day}`; // YYYY-MM-DD
+
+            const formData = new FormData();
+            formData.append('roll_number', rollNumber);
+            formData.append('date_of_birth', dob);
+
+            try {
+                const response = await fetch('{% url "home" %}', {
+                    method: 'POST',
+                    headers: { 'X-CSRFToken': getCookie('csrftoken') },
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    const student = data.data;
+
+                    document.getElementById('userName').textContent = student.name;
+                    document.getElementById('userRoll').textContent = student.roll_number;
+                    document.getElementById('userDOB').textContent = student.dob;
+                    document.getElementById('userEmail').textContent = student.email;
+                    document.getElementById('userPhone').textContent = student.phone;
+                    document.getElementById('userClass').textContent = student.class;
+                    document.getElementById('userCategory').textContent = student.category;
+                    document.getElementById('userSegments').textContent = Array.isArray(student.segments) ? student.segments.join(', ') : student.segments;
+
+                    // Show barcode if exists
+                    if (student.barcode_url) {
+                        document.getElementById('barcodeImage').src = student.barcode_url;
+                        document.getElementById('barcodeSection').style.display = 'block';
+                    } else {
+                        document.getElementById('barcodeSection').style.display = 'none';
+                    }
+
+                    resultSection.style.display = 'block';
+                    resultSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    alert('No record found or invalid details.');
+                }
+
+            } catch (err) {
+                alert('Server error.');
+            }
+        });
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let cookie of cookies) {
+                    cookie = cookie.trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        newSearchBtn.addEventListener('click', function() {
+            form.reset();
+            resultSection.style.display = 'none';
+            document.getElementById('searchSection').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('downloadBtn').addEventListener('click', async function () {
+            const { jsPDF } = window.jspdf;
+
+            // Colors & sizes (match your theme)
+            const PRIMARY = '#1a73e8';
+            const DARK = '#0d47a1';
+            const LIGHT = '#e8f0fe';
+            const TEXT = '#212529';
+            const GREEN = '#34a853';
+            const ORANGE = '#f57c00';
+
+            // Replace with your real logo file (PNG/SVG/JPG)
+            const LOGO_URL = '/static/image.png';
+
+            // Grab current UI values
+            const name = document.getElementById('userName').textContent || '-';
+            const roll = document.getElementById('userRoll').textContent || '-';
+            const dob  = document.getElementById('userDOB').textContent || '-';
+            const email = document.getElementById('userEmail').textContent || '-';
+            const phone = document.getElementById('userPhone').textContent || '-';
+            const klass = document.getElementById('userClass').textContent || '-';
+            const category = document.getElementById('userCategory').textContent || '-';
+            const segmentElement = document.getElementById('userSegments');
+            const segmentText = segmentElement ? segmentElement.textContent : '-';
+            const barcodeSrc = (document.getElementById('barcodeImage') || {}).src || null;
+
+            // Helpers
+            const loadImageAsDataURL = (url) => new Promise((resolve, reject) => {
+                if (!url) return resolve(null);
+                const img = new Image();
+                img.crossOrigin = 'anonymous';
+                img.onload = () => {
+                    // Draw to canvas to ensure same-origin DataURL
+                    const c = document.createElement('canvas');
+                    c.width = img.naturalWidth; c.height = img.naturalHeight;
+                    const ctx = c.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+                    resolve(c.toDataURL('image/png'));
+                };
+                img.onerror = () => resolve(null); // fail gracefully
+                img.src = url;
+            });
+
+            const doc = new jsPDF({ unit: 'pt', format: 'a4' }); // 595 x 842 pt
+            const pageW = doc.internal.pageSize.getWidth();
+            const pageH = doc.internal.pageSize.getHeight();
+            const M = 40; // margin
+
+            // Top colored border
+            doc.setFillColor(PRIMARY);
+            doc.rect(0, 0, pageW, 10, 'F');
+
+            // Header with logo + title
+            let y = M + 10;
+            let logoW = 52, logoH = 52;
+            const logoData = await loadImageAsDataURL(LOGO_URL);
+            if (logoData) {
+                doc.addImage(logoData, 'PNG', M, y - 6, logoW, logoH);
+            } else {
+                // Fallback: draw a soft logo placeholder
+                doc.setFillColor(LIGHT);
+                doc.roundedRect(M, y - 6, logoW, logoH, 8, 8, 'F');
+                doc.setFont('helvetica', 'bold'); doc.setTextColor(PRIMARY); doc.setFontSize(10);
+                doc.text('LOGO', M + 14, y + 22);
+            }
+
+            doc.setFont('helvetica', 'bold'); doc.setTextColor(DARK); doc.setFontSize(20);
+            doc.text('Bangladesh Space Olympiad', M + logoW + 12, y + 8);
+            doc.setFont('helvetica', 'normal'); doc.setTextColor(TEXT); doc.setFontSize(11);
+            doc.text('Official Registration Verification', M + logoW + 12, y + 28);
+            doc.setFontSize(9);
+            doc.setTextColor('#596070');
+            doc.text(`Generated: ${new Date().toLocaleString()}`, M + logoW + 12, y + 44);
+
+            // Title line
+            y += 70;
+            doc.setDrawColor(PRIMARY);
+            doc.setLineWidth(1);
+            doc.line(M, y, pageW - M, y);
+            y += 24;
+
+            // Roll Number highlight card
+            const rollCardW = pageW - 2*M;
+            const rollCardH = 60;
+            doc.setFillColor(LIGHT);
+            doc.roundedRect(M, y, rollCardW, rollCardH, 10, 10, 'F');
+
+            doc.setFont('helvetica', 'bold'); doc.setTextColor(DARK);
+            doc.setFontSize(12);
+            doc.text('Roll Number', M + 16, y + 22);
+
+            doc.setFont('helvetica', 'bold'); doc.setTextColor('#0b3a8a'); // deeper blue
+            doc.setFontSize(22);
+            doc.text(roll, M + 16, y + 44);
+
+            // Status chip (optional; choose one)
+            // doc.setFillColor(233, 248, 237); doc.setTextColor(GREEN);
+            // doc.roundedRect(pageW - M - 110, y + 16, 94, 26, 13, 13, 'F');
+            // doc.setFontSize(11); doc.setFont('helvetica', 'bold');
+            // doc.text('ACTIVE', pageW - M - 110 + 22, y + 34);
+
+            y += rollCardH + 24;
+
+            // Student details box
+            const boxPad = 16;
+            const detailsW = pageW - 2*M;
+            const detailsH = 240;
+            doc.setDrawColor('#e9ecef');
+            doc.setFillColor('#ffffff');
+            doc.roundedRect(M, y, detailsW, detailsH, 10, 10, 'FD');
+
+            const label = (txt, x, yy) => {
+                doc.setFont('helvetica', 'bold'); doc.setTextColor('#495057'); doc.setFontSize(11);
+                doc.text(txt, x, yy);
+            };
+            const value = (txt, x, yy) => {
+                doc.setFont('helvetica', 'normal'); doc.setTextColor(TEXT); doc.setFontSize(12);
+                doc.text(txt || '-', x, yy + 16);
+            };
+
+            // Two-column layout
+            let col1X = M + boxPad;
+            let col2X = M + boxPad + (detailsW / 2);
+            let rowY = y + boxPad + 6;
+            const rowGap = 42;
+
+            label('Full Name', col1X, rowY); value(name, col1X, rowY); 
+            label('Email', col2X, rowY); value(email, col2X, rowY);
+
+            rowY += rowGap;
+            label('Phone', col1X, rowY); value(phone, col1X, rowY);
+            label('Date of Birth', col2X, rowY); value(dob, col2X, rowY);
+
+            rowY += rowGap;
+            label('Class', col1X, rowY); value(klass, col1X, rowY);
+            label('Category', col2X, rowY); value(category, col2X, rowY);
+
+            rowY += rowGap;
+            label('Segment', col1X, rowY); value(segmentText, col1X, rowY);
+
+            // Barcode block (right-aligned or full-width depending on image)
+            y += detailsH + 24;
+
+            if (barcodeSrc) {
+                const barcodeData = await loadImageAsDataURL(barcodeSrc);
+                if (barcodeData) {
+                    const boxW = pageW - 2*M;
+                    const boxH = 200;
+                    doc.setDrawColor('#e9ecef');
+                    doc.setFillColor('#ffffff');
+                    doc.roundedRect(M, y, boxW, boxH, 10, 10, 'FD');
+
+                    doc.setFont('helvetica', 'bold'); doc.setTextColor(DARK); doc.setFontSize(12);
+                    doc.text('Registration Barcode', M + 16, y + 24);
+
+                    // Center barcode
+                    const imgMaxW = boxW - 60;
+                    const imgMaxH = 140;
+                    // Measure by preloading to get aspect (we already rasterized, but we lack size; assume wide barcode)
+                    const imgW = imgMaxW;
+                    const imgH = 140;
+                    const imgX = M + (boxW - imgW) / 2;
+                    const imgY = y + 40;
+
+                    doc.addImage(barcodeData, 'PNG', imgX, imgY, imgW, imgH);
+                    y += boxH + 16;
+                }
+            }
+
+            // Footer
+            doc.setDrawColor('#e9ecef');
+            doc.line(M, pageH - 60, pageW - M, pageH - 60);
+            doc.setFont('helvetica', 'normal'); doc.setTextColor('#6c757d'); doc.setFontSize(10);
+            doc.text('© 2025 Bangladesh Space Olympiad', M, pageH - 40);
+            doc.text('This document confirms your registration details as recorded in the system.', M, pageH - 24);
+            doc.setTextColor(PRIMARY);
+            doc.text('bsrs.society@gmail.com', pageW - M - 140, pageH - 40);
+
+            // File name
+            const safeName = name.replace(/[^\w\d\- ]+/g, '').trim() || 'student';
+            doc.save(`${safeName}_${roll}_registration.pdf`);
+        });
+    });
+</script>
+
+</body>
+</html>

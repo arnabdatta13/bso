@@ -1,0 +1,4 @@
+Name,Phone,Email,Class,Date of Birth,Category,Segments
+Alex Johnson,(555) 123-4567,alex.j@example.com,Class 12,2001-03-15,Science,"Segment A;Segment B"
+Sarah Williams,(555) 234-5678,sarah.w@example.com,Class 11,2000-08-22,Arts,"Segment B"
+Michael Brown,(555) 345-6789,michael.b@example.com,Class 12,2002-01-10,Commerce,"Segment A;Segment C"
