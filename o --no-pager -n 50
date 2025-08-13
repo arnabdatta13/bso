@@ -1,0 +1,18 @@
+[0;1;31m×[0m bso.service - Gunicorn instance to serve bso
+     Loaded: loaded (]8;;file://localhost/etc/systemd/system/bso.service/etc/systemd/system/bso.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2025-08-13 18:06:20 UTC; 23s ago
+   Duration: 5.104s
+    Process: 2723 ExecStart=/var/www/bso/venv/bin/gunicorn --workers 3 --bind unix:/run/bso.sock bso.wsgi:application [0;1;31m(code=exited, status=1/FAILURE)[0m
+   Main PID: 2723 (code=exited, status=1/FAILURE)
+        CPU: 95ms
+
+Aug 13 18:06:15 localhost systemd[1]: Started bso.service - Gunicorn instance to serve bso.
+Aug 13 18:06:15 localhost gunicorn[2723]: [2025-08-13 18:06:15 +0000] [2723] [INFO] Starting gunicorn 23.0.0
+Aug 13 18:06:15 localhost gunicorn[2723]: [2025-08-13 18:06:15 +0000] [2723] [ERROR] connection to /run/bso.sock failed: [Errno 13] Permission denied
+Aug 13 18:06:16 localhost gunicorn[2723]: [2025-08-13 18:06:16 +0000] [2723] [ERROR] connection to /run/bso.sock failed: [Errno 13] Permission denied
+Aug 13 18:06:17 localhost gunicorn[2723]: [2025-08-13 18:06:17 +0000] [2723] [ERROR] connection to /run/bso.sock failed: [Errno 13] Permission denied
+Aug 13 18:06:18 localhost gunicorn[2723]: [2025-08-13 18:06:18 +0000] [2723] [ERROR] connection to /run/bso.sock failed: [Errno 13] Permission denied
+Aug 13 18:06:19 localhost gunicorn[2723]: [2025-08-13 18:06:19 +0000] [2723] [ERROR] connection to /run/bso.sock failed: [Errno 13] Permission denied
+Aug 13 18:06:20 localhost gunicorn[2723]: [2025-08-13 18:06:20 +0000] [2723] [ERROR] Can't connect to /run/bso.sock
+Aug 13 18:06:20 localhost systemd[1]: [0;1;39m[0;1;31m[0;1;39mbso.service: Main process exited, code=exited, status=1/FAILURE[0m
+Aug 13 18:06:20 localhost systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mbso.service: Failed with result 'exit-code'.[0m
