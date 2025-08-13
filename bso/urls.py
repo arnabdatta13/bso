@@ -28,6 +28,7 @@ urlpatterns = [
     path("logout/", views.admin_logout, name="logout"),
     path("students/", views.students, name="students"),
     path("send-sms/", views.send_sms, name="send_sms"),  # Assuming you have a view for sending SMS
+    path("send-sms-all/", views.send_sms_all, name="send_sms_all"),  # New URL for sending SMS to all students
     path('scan/', views.scan_barcode_page, name='scan_page'),
     path('check-roll/', views.check_roll, name='check_roll_number'),
     path("add-student/", views.add_student, name="add-student"),  # Assuming you have a view for adding students

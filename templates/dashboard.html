@@ -233,6 +233,11 @@
                     </div>
                     <div class="col-auto text-right float-right ml-auto">
                         <a href="{% url 'add-student' %}" class="btn btn-primary"><i class="fas fa-plus"></i></a>
+                        <a>
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sendnotificationall">
+                            Send SMS To All Students
+                          </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -307,7 +312,31 @@
     </div>
 </div>
 
-
+<div class="modal fade" id="sendnotificationall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Send SMS To All Students</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="{% url 'send_sms_all' %}">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="4" placeholder="Enter your message here..."></textarea>
+                        <input type="text" class="form-control" name="student_id" value="{{ i.id }}" hidden>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send SMS</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
 <script src="{% static 'assets/js/popper.min.js' %}"></script>
 <script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>

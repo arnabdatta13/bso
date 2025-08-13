@@ -95,6 +95,27 @@ def send_sms(request):
     return redirect('dashboard')  # Redirect to dashboard after sending SMS
 
 @admin_login_required
+def send_sms_all(request):
+    if request.method == 'POST':
+        message = request.POST.get('message')
+        print(f"Sending SMS to all students with message: {message}")
+        students = Student.objects.all()
+        api_key = "vc06DvQeuSOHnHwKaZaY"
+        sender_id = "8809617624694"
+
+        for student in students:
+            phone_number = student.phone
+            receiver_number = phone_number  # Example: 01712345678
+            # API URL
+            url = f"http://bulksmsbd.net/api/smsapi?api_key={api_key}&type=text&number={receiver_number}&senderid={sender_id}&message={message}"
+            # Send GET request
+            response = requests.get(url)
+            # Print response
+            print(f"SMS sent to {student.name} ({receiver_number}): {response.status_code} - {response.text}")
+        return redirect('dashboard')  # Redirect to dashboard after sending SMS to all
+    return redirect('dashboard')  # Redirect to dashboard after sending SMS to all
+
+@admin_login_required
 def scan_barcode_page(request):
     return render(request, "scan_barcode.html")
 
