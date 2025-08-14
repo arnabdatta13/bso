@@ -14,30 +14,46 @@ def import_students_from_csv(csv_file):
         reader = csv.DictReader(file)
 
         for row in reader:
+            email = row.get('Email Address', '').strip()
+            phone = row.get('Phone Number', '').strip()
+
             # Parse date of birth
             try:
-                dob = datetime.strptime(row['Date of Birth'], "%Y-%m-%d").date()
+                dob = datetime.strptime(row['Date of birth'], "%d/%m/%Y").date()
             except ValueError:
-                print(f"❌ Invalid date for {row['Email']}, skipped.")
+                print(f"❌ Invalid date for {email or 'Unknown Email'}, skipped.")
                 continue
 
-            # Check if student already exists
-            if Student.objects.filter(email=row['Email']).exists():
-                print(f"⚠️ {row['Email']} already exists, skipped.")
+            # Check for duplicate email
+            if email and Student.objects.filter(email=email).exists():
+                print(f"⚠️ Email {email} already exists, skipped.")
                 continue
-            segments = [s.strip() for s in row["Segments"].split(";")]
-            # Create student — roll_number and barcode will auto-generate in model's save()
+
+            # Check for duplicate phone number
+            if phone and Student.objects.filter(phone=phone).exists():
+                print(f"⚠️ Phone {phone} already exists, skipped.")
+                continue
+
+            # Segments (optional)
+            segments = []
+            if 'Segments' in row and row['Segments']:
+                segments = [s.strip() for s in row['Segments'].split(";")]
+
+            # Create student — roll_number and barcode auto-generate in save()
             student = Student.objects.create(
-                name=row['Name'],
-                email=row['Email'],
-                phone=row['Phone'],
+                name=row.get('Name'),
+                email=email or None,
+                phone=phone or None,
+                emergency_contact_number=row.get('Emergency Contact Number'),
+                gender=row.get('Gender'),
                 date_of_birth=dob,
-                student_class=row.get('Class', ''),   # New field
-                category=row.get('Category', ''),    # New field
-                segments=segments    # New field
+                institution_name=row.get('Institution Name'),
+                student_class=row.get('Class / Grade', ''),
+                category=row.get('Category', ''),  
+                segments=segments
             )
 
             print(f"✅ Added {student.name} ({student.roll_number}) with barcode")
 
-# Call the function
-import_students_from_csv('data.csv')
+if __name__ == "__main__":
+    import_students_from_csv('data.csv')

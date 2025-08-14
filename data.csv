@@ -1,4 +1,436 @@
-Name,Phone,Email,Class,Date of Birth,Category,Segments
-Alex Johnson,(555) 123-4567,alex.j@example.com,Class 12,2001-03-15,Science,"Segment A;Segment B"
-Sarah Williams,(555) 234-5678,sarah.w@example.com,Class 11,2000-08-22,Arts,"Segment B"
-Michael Brown,(555) 345-6789,michael.b@example.com,Class 12,2002-01-10,Commerce,"Segment A;Segment C"
+Email Address,Name,Date of birth,Gender,Phone Number,Emergency Contact Number,Institution Name,Class / Grade
+ahye0331@gmail.com,NURI AMRIN SABAH,23/12/2011,Female,01912869329,01912869329,Viqarunnisa Noon School and College,Class 8
+ameliasherah60@gmail.com,Sanjida Harun Shefa ,3/8/2006,Female,01796804809,01823078171,Viqarunnisa Noon School and college ,Class 11
+mingbai39@gmail.com,Shehrin Islam Shrobona,29/11/2009,Female,01814248969,01817057008,Viqarunnisa Noon School and College,Class 10
+trexolief@gmail.com,Tanzia Sultana,9/5/2009,Female,01868945881,01686235744,Viqarunnisa Noon School and College ,Class 10
+lahirahman63@gmail.com,Abdur Rahman Lahi ,6/12/2007,Male,01942401663,01942401663,Sylhet Govt. Model School & College ,Class 11
+arrshiie@gmail.com,,28/1/2009,Female,01911591615,01730335827,"Viqarunnisa Noon School & College (Dhanmondi Branch, Morning Shift)",Class 10
+arrshiie@gmail.com,Tasmia Yazdan Arshi,28/1/2009,Female,01911591615,01730335827,"Viqarunnisa Noon School & College (Dhanmondi Branch, Morning Shift)",Class 10
+johanahossain97@gmail.com,Jarif Hossain,5/10/2013,Male,01916200070,01621863960,Ideal School and College (Banasree),Class 6
+kamrul.88.bp@gmail.com,Anika Nawar Ahsan,14/4/2008,Female,01711521853,01517301221,"Viqarunnisa Noon School & College, Dhaka",Class 10
+sparvin66@gmail.com,Rashmia Nur Raifa,6/11/2014,Female,01935880920,01776104236,Shiddeshwari Girls' High school ,Class 5
+sanzidarupa123@gmail.com,Sanzida Baig,5/12/2006,Female,01622998255,01610744117,Viqarunnisa Noon School and College ,Class 12
+nahdinafshan@gmail.com,Nahdi Nafshan,30/4/2010,Male,01324932614,01714084012,Bangladesh International School and College,SSC or Equivalent
+johanahossain97@gmail.com,Jarif Hossain,5/10/2013,Male,01916200070,01621863960,Ideal School and College (Banasree),Class 6
+tahminaakterdaisy@gmail.com,Muhammad Isa (মুহাম্মাদ ঈসা),19/3/2014,Male,01715032229,01715032229,Averroes International School ,Class 5
+24samsun.nahar@gmail.com,Shabnam Khan ,3/7/2010,Female,01911476138,01911476138,"Ideal School And College, Motijheel ",Class 10
+mariaislamjannat12@gmail.com,Maria Islam Jannat,25/6/2010,Female,01624293104,01710325260,National Ideal School ,Class 10
+nabihossainmia553@gmail.com,Mahmudul Hasan siam ,6/8/2010,Male,01921942240,01915174762,Gazipur cantonment public school and college,Class 9
+zaemonburiburi599@gmail.com,Nirban Bin Shahjhan ,4/12/2007,Male,01822627262,01897875778,"Notre Dame College, Dhaka ",Class 11
+digontotravelfreak@gmail.com,Ahona Biswas ,15/5/2012,Female,01712698686,01712698686,Viqarunnisa Noon School And College ,Class 8
+zariffairooza@gmail.com,Zarif Fairoza,15/8/2011,Female,01711582420,01718115858,Viquarunnisa Noon School and College,Class 8
+nameera.nurjahan@gmail.com,Nameera Nurjahan,9/7/2015,Female,01913258246,01922268589,Shaheed Bir Uttam Lt. Anwer Girls' College,Class 4
+arshad.fugel@gmail.com,Zunaira Sehrish,13/8/2012,Female,01715909820,01678134987,Shaheed Bir Uttam Lt. Anwar Girls College,Class 7
+runashema80@gmail.com,Shahadath Hossain Sabbir,24/2/2006,Male,01959646387,01678601837,"Ananda Mohan College, Mymensingh ",HSC or Equivalent
+sherminesiraj@gmail.com,Tasneem Binte Tawfiq,5/9/2015,Female,01920980055,01763013744,Shaheed Bir Uttam Lt. Anwar Girls’ College,Class 4
+shariffsujon@gmail.com,Shafika Haque,9/9/2011,Female,01713043111,01713043111,Viqarunnisa Noon School and College,Class 8
+tayeebatahalil77@gmail.com,Tayeeba Tahalil,6/4/2011,Female,01926015948,01720173463,Viqarunnisa Noon School & College ,Class 8
+sabihakhan2027@gmail.com,Sabiha Khan,25/9/2011,Female,01886270046,01886270046,Viqarunnisa Noon School and College,Class 8
+tumpakundu66089@gmail.com,Adhora kundu ,29/5/2011,Female,01716500587,01912055612,Viqarunnisa Noon School & College ,Class 8
+zrsiddique82@gmail.com,Fariha Rahman ,22/2/2015,Female,01729663981,01729663981,শহীদ বীর উত্তম লেফটেন্যান্ট আনোয়ার গার্লস কলেজ,Class 5
+mominul99@gmail.com,Ayman Fariha Aayat,7/4/2013,Female,01711230054,01711230054,Shaheed Bir Uttam Lt Anwar Girls’ College,Class 5
+mahmudulhasan821@gmail.com,Ahiyan Zuhayr,27/9/2014,Male,01722236817,01711082755,Maple Leaf International School,Class 4
+saomavenger@gmail.com,Saom Khan,30/12/2009,Male,01726101055,01712101075,Pabna Collectorate Public School and College,SSC or Equivalent
+tasniatanjim698@gmail.com,TASNIA TANJIM,26/9/2010,Female,01718282268,01906271521,PABNA COLLECTORATE PUBLIC SCHOOL & COLLEGE ,Class 10
+mahdiaminchowdhury10@gmail.com,Nujhat Naila Chowdhury,18/11/2008,Female,01933157450,01781124534,Shaheen English Medium College,Class 12
+sarothipartho796@gmail.com,Partho Sarothi Roy,12/12/2006,Male,01328107896,01784919385,Dhaka College,Class 12
+emtiazart987@gmail.com,Ahamed Emtiaz Ohon ,5/9/2007,Male,01847727215,01772804872,"Notre Dame College, Dhaka",Class 12
+shirsho1971@gmail.com,Shirsha Dev Sarker,18/10/2011,Male,01714098073,01700517546,Rajuk Uttara Model College ,Class 8
+yesminsultana114727@gmail.com,Fatema Nowshin ,10/2/2013,Female,01828114727,01828114727,Viqarunnisa Noon School And College ,Class 6
+nahidazmin@gmail.com,Aareebah mahnam fateema ,20/10/2016,Female,01717570174,01748928096,Shaheed Bir Uttam Lt.Anwar girls college ,Class 3
+ranascil123@gmail.com,Ruqayyah Bint Rahman ,28/8/2012,Female,01751752133,01731944049,Navy Anchorage School and College Khulna,Class 7
+msnt7d@gmail.com,Labiba Binta Sulayman,1/9/2011,Female,01718710317,01718710317,Viqarunnisa Noon School and College ,Class 8
+msnt7d@gmail.com,Lubaba Tasnim,18/4/2016,Female,01718710317,01718710317,Viqarunnisa noon School and College ,Class 3
+tariqul291183@gmail.com,Nazifa Aidah Jannati,29/8/2015,Female,01908838833,01918784802,Viqarunnisa Noon school and College ,Class 3
+tariqul291183@gmail.com,20162692517120999,28/8/2016,Female,0198838833,01918784802,Viqarunnisa noon school and school ,Class 3
+ptarapdar@gmail.com,Anushree Gope,24/11/2006,Female,01322003706,01711277753,"Sylhet Govt. Women's College, Sylhet",HSC or Equivalent
+2263a3022rumc@gmail.com,D.B.M Ashin,31/12/2010,Male,01712940641,01711365574,Dhaka Residential Model College,Class 9
+arunsaha121974@gmail.com,Arittri Saha,6/7/2011,Female,01957744670,01712992420,Viqarunnisa Noon School and College,Class 8
+mahdiaminchowdhury10@gmail.com,Nujhat Naila Chowdhury,18/11/2008,Female,019 3315 7450,01781124534,Shaheen English Medium College,Class 12
+mahdiaminchowdhury10@gmail.com,Nujhat Naila Chowdhury,18/11/2008,Female,019 3315 7450,019 3315 7450,Shaheen English Medium College,Class 12
+mahdiaminchowdhury10@gmail.com,Mahdi Amin Chowdhury,6/7/2007,Female,01978881874,01924554425,Adamjee Cantonment college ,Class 11
+luthfunnahar082@gmail.com,Faiza Marium,31/12/2007,Female,01748999450,01949907841,Shaheed Bir Uttam Lt. Anwar Girls' College,Class 12
+farihayasminnutri@gmail.com,TASFIA TAHSIN NEHA,14/6/2016,Female,01816257782,01816257781,Shaheed Bir Uttam Lt. Anwar Girls College ,Class 3
+priyaaust4@gmail.com,Nava Kibria,12/5/2011,Female,01732816309,01819867649,Viqarunnisa Noon School and College ,Class 8
+fatinainaya4@gmail.com,Farahnaz Hossain,31/7/2011,Female,01746399475,01577203303,Viqarunnisa Noon School,Class 8
+samidomi635@gmail.com,Md. Shayaan Sarker Arham,18/12/2016,Male,01722312048,01916100335,Navy Encourage School and College Dhaka,Class 3
+rsgupta280978@gmail.com,Adruth Sen Gupta,28/8/2015,Male,01844019153,01791718891,Navy Anchorage School and college dhaka,Class 3
+jamil.abedin29@gmail.com,Muhammad Safwan Abedin,18/8/2013,Male,01732717117,01962424560,Navy Anchorage School & College ,Class 7
+tahmeedgalib55@gmail.com,Tahmeed Galib,11/9/2007,Male,01887603746,01714246707,Adamjee Cantonment public school ,SSC or Equivalent
+syeda.sanober@gmail.com,Nahl Miftahul Jannat,26/10/2016,Female,01911323012,01711595822,Ideal School and College ,Class 3
+sailor.polash@gmail.com,Parihan Khan,31/12/2015,Female,01719374437,01719374437,"Navy Anchorage School and College,  Dhaka",Class 3
+aadil.ove553@gmail.com,Arwa Iqbal ,18/9/2016,Female,01937032679,01937032679,Navy Anchorage School and College Dhaka ,Class 3
+maksudul1979@gmail.com,Tasnimul Hasan Mishkat ,27/9/2012,Male,01712304671,01717366658,Navy Anchorage School and College ,Class 7
+shahnaz.ugc@gmail.com,Marzia Mahdiya ,14/11/2016,Female,01912213248,01912213248,"Navy Anchorage School and College, Dhaka",Class 3
+perfusionistbulbul@gmail.com,SHOIB HASNAIN MUGDHO,10/8/2014,Male,+8801932910718,+8801534656385,Navy Anchorage School and College Dhaka ,Class 5
+kbd.arif@gmail.com,Adila mahzabin pariza,14/1/2016,Female,01761911920,01673679306,,Class 3
+juealbid@gmail.com,Md. Junaid Labib,7/1/2014,Male,01311080591,01711080591,"Navy Anchorage School & College, Dhaka",Class 5
+irfanaisfar@gmail.com,Isfar Hoque ,17/2/2016,Male,01759517227,01717167862,Navy Anchorage School & College Dhaka ,Class 3
+raiyantr2004@gmail.com,Afra Rezwana Rahman,11/26/0010,Female,01309941671,01712120316,Motijheel Ideal School and College,Class 8
+mdashrafulslm@gmail.com,MST AFRA YESMIN ARNI ,29/10/2007,Female,01775294313,01775294313,BAF SHAHEEN COLLEGE DHAKA,HSC or Equivalent
+poonamsarkar210@gmail.com,Aryashrestha Saha,18/5/2014,Male,01723208121,01795551360,Bogura Cantonment Public School and College ,Class 5
+ahmedmoni26@yahoo.com,Ayaat Ahmed,8/12/2014,Female,01784491638,01784491638,Viqarunnisa noon school and college ,Class 5
+merch.biplob@gmail.com,"Aronnok Mahmud Tasen,",20/10/2014,Male,01313036606,01313036606,Navy Anchorage School and College Dhaka,Class 5
+russel.russel@gmail.com,ANISHA TASNIM,2/4/2012,Female,01711924647,01732883775,Viqarunnisa Noon School and College ,Class 7
+zarasalmeen2008@gmail.com,Zara Salmeen Nusaibah ,19/9/2008,Female,01988760750,01765588944,Blue Bird High School & College,SSC or Equivalent
+mayadarahman1022@gmail.com,Mayada Rahman,22/10/2006,Female,01751645576,01861246349,Viqarunnisa Noon School And College ,HSC or Equivalent
+nayeema.neelaru@gmail.com,Nahyan Ibn Hasan,22/7/2016,Male,01765588944,01765588944,Hello Kids International School ,Class 3
+mayadarahman1022@gmail.com,Tayaba Rahman,9/11/2012,Female,01861247349,01751645576,Viqarunnisa Noon School And College ,Class 6
+mondal.catapol@gmail.com,Md.Amir Hamja,12/2/2016,Male,01738063844,01738063844,Navy Anchorage School and College Dhaka,Class 3
+jannatul1713@gmail.com,Jardary An Nafi,10/12/2015,Male,01903259636,01903259636,Islamabad Collegiate School Khulna,Class 4
+nadighi564@gmail.com,Israt Jahan Dighi,16/5/2011,Female,01706446020,01846174282,Viqarunnisa Noon School and College,Class 8
+jasimbasic@gmail.com,Juwairiya Suha Fariha,30/12/2012,Female,01818416606,01814792033,Viqarunnisa Noon School ,Class 7
+hossenlamiya57@gmail.com,Lamiya Hossen,24/8/2012,Female,01685112233,01685112233,Viqarunnisa Noon School and College,Class 7
+nasrah.writ3s@gmail.com,Tasnim Sultan Nasraha,13/4/2012,Female,01918643650,01918643650,Viqarunnisa Noon School and College (Bashundhara Branch),Class 7
+nafizaakterasfi@gmail.com,Nafiza Akter Asfi ,7/1/2011,Female,01778504094,01778504094,Siddheswari Girls' High School ,Class 9
+nahid.alice.69@gmail.com,Talha Ahmed,17/12/2015,Male,01723045554,01723045554,Navy Anchorage School and College Dhaka,Class 4
+sbidoura@gmail.com,Sk. Miraf Hasan,22/6/2015,Male,01712770000,01712037380,Navy Anchorage School And College,Class 3
+nisho1130@gmail.com,Tasin Waziha,22/7/2011,Female,01816539097,01816539097,Viqarunnisa Noon School and College,Class 7
+asadshabuj@gmail.com,Farishta Zaman Aria,1/1/2016,Female,01711489754,01711489754,Navy Anchorage school & College Dhaka,Class 3
+nisho1130@gmail.com,Tasin Waziha,22/7/2011,Female,01816539097,01816539097,Viqarunnisa Noon School and College ,Class 7
+binotabso12@gmail.com,Suddhi Bhowmik ,2/4/2012,Female,01737625662,01718111178,Viqarunnisa noon school and College ,Class 7
+purnotavnsc@gmail.com,Tayyibah Taj Purnota ,25/10/2013,Female,01711988800,01787388800,Viqarunnisa Noon School And College,Class 6
+2263a3009rumc@gmail.com,Musabbir Nabi Chowdhury,11/7/2009,Male,01750912100,01750912100,Rajuk Uttara Model College,Class 9
+mahanaba2010@gmail.com,Fatima Afrin,28/6/2011,Female,01799279230,01799279230,Viqarunnisa Noon School And Collage ,Class 8
+mahanaba2010@gmail.com,Zaynab Afrin ,28/6/2011,Female,1799279230,01799279230,Viqarunnisa Noon School And College ,Class 8
+lizahozaefa@gmail.com,Rowja Manha,1/10/2013,Female,01716643724,01632099135,Spectrum International School,Class 7
+sadiasamsun1989@gmail.com,Sadia Prodhan ,13/9/2013,Female,01821872600,01821872600,Viqarunnisa Noon School And Collage ,Class 6
+sharminadifah@gmail.com,Nujhat Binte Mohsin ,13/8/2011,Female,01911396304,01915777333,Viqarunnisa Noon School and College ,Class 8
+rkarim.sarker1982@gmail.com,Rifah Tahsin Karim,30/12/2013,Female,01818731267,01683773741,Viqarunnisa Noon School and College,Class 6
+sadiasamsun1989@gmail.com,Sadia Prodhan ,13/9/2013,Female,01821872600,01821872600,Viqarunnisa Noon school and college,Class 6
+azaminrul@gmail.com,Mirha Senayat,30/11/2011,Female,01719022795,01791303378,Shaheed Colonel Kazi Emdadul Haque Public School,Class 8
+kimlusi295@gmail.com,Tahiya Tabib,17/9/2007,Female,01714696503,01714696503,Rajuk Uttara Model College ,Class 12
+ahmedfarhaz123@gmail.com,Faiza Marium,31/12/2007,Female,01748999450,01949907841,Shaheed Bir Uttam Lt. Anwar Girls' College ,Class 12
+kamaura71@gmail.com,Ahdia ala afra,27/10/2013,Female,01711976980,01552387422,Viqarunnisa Noon School and College,Class 6
+diluict@gmail.com,Tahniat Hilaly,29/1/2013,Female,01840188800,01818752999,Noubahini College,Class 7
+rsshapla019@gmail.com,Tanzila Binte Bashar Tuha,26/12/2012,Female,01716287007,01714103647,Viqarunnisa Noon School & College ,Class 7
+faiya.z27j@gmail.com,Faiyaz Ahmed,27/7/2011,Male,01973940434,01730027676,Bangladesh International School And College Mohakhali Dhaka,Class 8
+zaara1273@gmail.com,Saiba azad zaara,3/7/2013,Female,01784834814,01727151449,Viqarunnisa noon school and College ,Class 6
+soltanaarifa938@gmail.com,Wajiha Binte Fahad,14/12/2013,Female,01711311115,01717584439,Viqarunnisa Noon School,Class 6
+mamtidumham@gmail.com,Itmam Mahmud,12/11/2007,Male,01732997765,01715623455,Scholastica,Class 11
+akhandrabeya@gmail.com,Rida Moonam Haque ,9/7/2025,Female,01911952459,01717072373,Viqarunnisa Noon S chool and College ,Class 5
+prema4338@gmail.com,Miftiul muntaha islam,5/5/2012,Female,01675600660,01675600660,Viqarunnisa noon school & college,Class 7
+bsoolympic@gmail.com,Munira Musharrat Naima,16/1/2011,Female,01935426446,01935426446,Siddheswari Girls' High School,Class 9
+aaradhakhushi@gmail.com,Aaradha khushi ,30/4/2012,Female,01913375520,01913375520,Viqarunnisa Noon school and college ,Class 7
+zaimamaisam08@gmail.com,Md Arafat Bin Azam ,10/3/2013,Male,01769764269,01769764269,Navy Anchorage School and College Dhaka,Class 6
+k.jabelahmed@gmail.com,Kazi Jeba,12/23/0012,Female,01712784329,01760151525,Viquarunnisa Noon School and College ,Class 7
+mehedimain3@gmail.com,Kaniz Fatema,8/2/2016,Female,01721860203,01721860203,SHAHEED BIR UTTAM LT ANWAR GIRLS COLLEGE,Class 6
+nusrat@acc.edu.bd,Riddhi Anindita ,9/3/2016,Female,01552419129,01886889595,Shaheed Bir Uttam Lt. Anwar Girls' College,Class 3
+mumujahan4200@gmail.com,Afrin Mehnaz Muntaha,30/11/2012,Female,01601899594,01601899594,Viqarunnisa Noon School and College ,Class 7
+jbin1417@gmail.com,Md. Numair Bin Alam ,14/11/2011,Male,01724209530,01886742965,"Navy Anchorage School and College,Dhaka ",Class 8
+kakoly970@gmail.com,Aadhira Bosu,30/8/2013,Female,01716200970,01601200970,Viqarunnisa Noon School and college ,Class 6
+ummaysalma.salma@gmail.com,Md. Abrar Karim,7/2/2016,Male,01823387285,01922213846,South Point School and College,Class 4
+ashaatifa@gmail.com,Fairuzah Ferdous Atifa ,24/3/2016,Female,01769001611,01769001611,Shaheed Bir Uttam Lt Anwar Girls College ,Class 3
+roktimrafi176@gmail.com,Ahnaf Rahman Rafi ,16/8/2010,Male,01963060544,01963060544,Comilla Zilla School ,Class 9
+shammiakhter676@gmail.com,Anisa Hamid ,16/8/2012,Female,01865703214,0186703214,Viqarunnisa noon school and College ,Class 7
+mohshinbdm2@gmail.com,Tasmia Humaira,13/7/2012,Female,01816469822,01816469822,Viqarunnisa noon school and college,Class 7
+rkarim664@gmail.com,Sania Saif,27/5/2013,Female,01738790566,01713366264,Viqarunnisa Noon School and College ,Class 6
+lizaakter1870@gmail.com,Tanshir Hasan Alif,29/7/2016,Male,01945357449,01945357449,South point school and college,Class 4
+amrbin86@gmail.com,ADIBA RAHMAN,2/2/2014,Female,01717196531,01751665999,Viqarunnisa Noon School & College,Class 5
+saomavenger@gmail.com,Jannatul Mawa,8/9/2010,Female,01711933390,01724387043,Pabna Collectorate Public School and College,Class 10
+neyamuldbbl@gmail.com,Tasnia Haque Arisha ,23/11/2012,Female,01712651750,01732220222,Viqarunnisa Noon School and College ,Class 7
+www.sdtb990@gmail.com,Md Tanvir,11/8/2007,Male,+8801303442239,01715243356,Government Mohammadpur Model School and College ,Class 12
+mail.sadikjf@gmail.com,Sadik Jafrullah Nabil,2/11/2007,Male,01304243564,01568814682,"Notre Dame College, Dhaka",Class 12
+muhtasimlamim12345@gmail.com,Afifa Nureen ,8/12/2012,Female,01725211588,01725211588,Viqarunnisa Noon School and College ,Class 7
+fardousmolla442@gmail.com,Md Nahid Hasan ,18/8/2009,Male,01575075689,01917609850,Islamabad collegiate school Khulna ,Class 11
+arminashraf9@gmail.com,Adiba Binte Ashraf ,19/8/2012,Female,01921006070,01516-595686,Viqarunnisa Noon School And College ,Class 7
+baki96che@gmail.com,Mershiha Mehnaz Arya ,1/1/2013,Female,01730315700,01846893526,Viqarunnisa Noon School & College ,Class 6
+meherun015@gmail.com,Simia Mahanur Rafa,4/1/2013,Female,01710568217,01710035132,Viqarunnisa school and College ,Class 6
+mukti4833@gmail.com,Tanzila Ahmed,4/12/2013,Female,01711224833,01711224833,Viqarunnisa Noon School and College ,Class 6
+nergis.bd@gmail.com,Mohammed Labib Yeamin,15/8/2013,Male,01819480552,017747078118,Rajuk Uttara Model College ,Class 7
+sharmin.mobarak@gmail.com,Raifa Sharmin Nafsi,7/9/2013,Female,01716158185,01716158184,Viqarunnisa Noon School & College,Class 6
+shahinooreden@gmail.com,Nusrat Jahan Soufa,2/7/2012,Female,01302310392,01715563663,Viqarunnisa Noon School & College ,Class 7
+sinthiyapervej@gmail.com,Mst. Jarin Tasnem Anta ,24/5/2012,Female,01721551916,01721551916,Viqarunnisa Noon School & College ,Class 7
+rafiarowsonorny@gmail.com,Nusaiba Jahan ,15/9/2013,Female,01727431153,01727431153,Viqarunnisa noon school and college ,Class 6
+shilalaila9@gmail.com,Nusaiba Afroj Suha,25/4/2009,Female,01731669737,01731669737,Viqarunnisa Noon School and College ,Class 10
+moslema.yeamin9@gmail.com,Maisha Labiba ,1/3/2013,Female,01753718272,01779187174,viqarunnisa noon school and college ,Class 6
+mamunpost666@gmail.com,Most. Nabila Ferdousi ,18/8/2012,Female,01531841598,01714046822,Viqarunnisa Noon School & College ,Class 7
+seungmong333@gmail.com,Fariha Tahsin ,3/11/2008,Female,01533987229,01818808311,BNMPC,Class 12
+atika.antara@gmail.com,Farhan Sadik,21/8/2017,Male,01791969795,01816332403,Shafiuddin Sarker Academy and College ,Class 3
+ronytalukderak47@gmail.com,Safikah Shakhawat Towa,12/1/2012,Male,01722041260,01673539734,Viqarunnisa Noon School and College,Class 7
+rabiussunny506@gmail.com,Rabi Us Sunny ,20/11/2008,Male,01304431304,01304431304,School ,SSC or Equivalent
+zamansaima48@gmail.com,Nazifa Jannat,1/11/2016,Female,01725907203,01725907203,Viqarunnisa Noon School ,Class 3
+samihaakterjuthi25@gmail.com,Samiha akter juthi ,22/11/2008,Female,01339402194,01718299777,Uttara high school and college ,Class 12
+sidratulmuntaha2707@gmail.com,Subhana Jahra Sreyan,18/8/2009,Female,01991-998815,01712193767,Ideal school and college ,SSC or Equivalent
+romapaulsa89@gmail.com,Shreyati Paul,19/12/2013,Female,01777761185,01768473133,Rajuk Uttara Model College,Class 6
+rifatasnia910@gmail.com,Rifa Tasnia,28/1/2007,Female,01333944905,01898420604,Rajuk Uttara Model College ,Class 12
+srishtibhattacharjeeiccha@gmail.com,Srishti Bhattacharjee Ichchha,8/7/2007,Female,01973615341,01714289745,Chittagong College ,Class 12
+abidshahariar8@gmail.com,Abid Al Shahariar ,5/1/2008,Male,01724116840,01724116840,Khulna Collectorate Public School & College ,Class 11
+muhtasimur.zihan@gmail.com,Radiah Binte Rahman Zoa,29/7/2010,Female,01913350505,01913350505,Viqarunnisa Noon School and College ,Class 9
+payelrahmanpayel@gmail.com,Nafiun Ahmed,8/7/2012,Male,01823197619,01823197619,Rajuk Uttara Model College ,Class 8
+dolisiddique833@gmail.com,Samia Rahman Mahi ,7/8/2009,Female,01741195894,+880 1681-940162,Viqarunnisa Noon School and College ,Class 10
+razeenramin962@gmail.com,Abrarur Rahman Ramin,18/5/2008,Male,01716732288,+8801729362909,Govt.Mohammadpur Model School And College,Class 10
+sheikhshahriarrohan@gmail.com,NAEEMA AKTER OISHI,21/5/2009,Female,01681940162,01944964511,Viqarunnisa Noon School and College,Class 10
+taibaahmmedopsora@gmail.com,SAEEMA AKTER SHOSHI,21/5/2009,Female,01681940162,01944964511,Viqarunnisa Noon School and College,Class 10
+mshrumc2018@gmail.com,মোঃ শাহাদ সিয়াম ,23/8/2013,Male,01712024936,01712024936,Rajuk Uttara Model College  ,Class 7
+shamemrs.bd@gmail.com,Shamrina Jamal Ayman ,19/2/2012,Female,01919600358,01919600358,Shamsul Hoque Khan school and college ,Class 7
+hasanboshary@gmail.com,Ahnaf Hasan Ayat,18/3/2014,Male,01825383499,01825383499,Chottogram Cantonment Public collage ,Class 6
+mlismahbeer@gmail.com,MAHBEER NIHAN,9/5/2010,Male,01819135354,01717850555,Maple Leaf International School,Class 10
+arobroy74@gmail.com,Arob Roy,30/4/2007,Male,01824868631,01683352519,ABC International School,HSC or Equivalent
+hamidulhaq1974@gmail.com,Muhib Hamid,17/4/2013,Male,01934530732,01934530732,Palong Tulasar Gurudas Govt. High School,Class 7
+muhibhamid555@gmail.com,Muhib Hamid,17/4/2013,Male,01934530732,01934530732,Paling Tulasar Gurudas Govt. High School,Class 7
+mrittikamithi1247@gmail.com,Mrittika Das,22/10/2007,Female,01568035595,01568035595,Chittagong college ,Class 12
+mamunsatarkul@gmail.com,Samrin Islam,8/6/2011,Female,01762551610,01836660660,Viqarunnisa Noon School & College,Class 8
+adritarakshit8@gmail.com,Adrita Rakshit ,25/6/2008,Female,01709439976,01709439976,Chattogram College ,Class 12
+mrtkgaminganddev@gmail.com,K M Tawhid Islam,15/9/2010,Male,01915561560,01917662914,Mazid Jarina Foundation School and College ,Class 10
+massharatmasaba@gmail.com,Massharat Kabir Masaba,11/2/2010,Female,01715053004,01715053004,"Islamabad Collegiate School,Khulna",Class 8
+aashfat45@gmail.com,Nafiza Ashrin Suba ,20/7/2011,Female,01710764737,01710764737,Rajuk Uttara Model College ,Class 9
+irfanhossainafif@gmail.com,Ayisha Akter Raisha,6/9/2011,Female,01715584340,01715584340,Rajuk Uttara Model College,Class 8
+rushnara.zara5544@gmail.com,Rushnara Yeasir Zara ,29/12/2010,Female,01752055607,01752055607,Rajuk Uttara Model College ,Class 8
+likhon8005@gmail.com,Likhon Bepary,4/3/2009,Male,01337737960,01880032456,Mazid jorina Foundation school and College ,Class 9
+if.lithee@gmail.com,KHANDKER MUHAMMAD RUMMAN AHMED,13/12/2010,Male,01711887517,01720002021,Islamabad Collegiate School Khulna,Class 8
+bitheakterabc@gmail.com,Tanha Taslim Zisa ,22/12/2011,Female,01985290307,01985290307,Rajuk Uttara Model College ,Class 8
+bd01740965165@gmail.com,FATEMAZAMAN BUSHRA,16/4/2010,Female,01712534553,01740965165,MAZID JARINA FOUNDATION SCHOOL & COLLEGE,Class 10
+majeddcc63@gmail.com,Yashfee Majed Additiya,18/12/2014,Female,01717049250,01717049250,Viqarunnisa Noon School and College,Class 5
+nilanehal99@gmail.com,Abrar Fatin Nehal,22/5/2013,Male,01749373116,01739791003,Pabna Collectorate Model School and College,Class 8
+mohi017005@gmail.com,Mahima,28/1/2008,Female,01710110529,01710110529,Mazid jarina foundation school and college ,Class 12
+mohi017005@gmail.com,Mahima,28/1/2008,Female,01710110529,01710110529,Mazid jarina foundation school and college ,Class 12
+samsunnaharratna76@gmail.com,Adib Abrar Rahman,4/1/2011,Male,01769761071,01769761071,Mirpur Cantonment Public School And College,Class 8
+bilkisssb@gmail.com,Zannatul Ferdous ,22/10/2008,Female,01716628592,01775795939,"Vidyamayee Govt. Girls' High School, Mymensingh ",SSC or Equivalent
+sheikhrito@gmail.com,Sheikh Tajmahal Soltana Rito ,22/2/2008,Female,01866961332,01866961338,Abdul kadir Mollah City College ,Class 12
+farbinferdous8@gmail.com,Farbin Ferdous,28/10/2009,Female,01714238483,01714238483,Mazid Jarina Foundation School And Collage,Class 10
+nukhan8181@gmail.com,MD.Lakkin Khan Luban,8/10/2011,Male,01722812319,"Yes, it's my mother's number 01722812319",Majid Jarina Foundation School and College,Class 8
+tanjimsadi149@gmail.com,Tanzim Rahman ,25/8/2013,Male,01870487398,01726114636,Mazid Jarina Foundation School And College ,Class 6
+sharminadifah@gmail.com,Nujhat Binte Mohsin ,13/8/2011,Female,01911396304,01911396304,Viqarunnisa noon school and college ,Class 8
+rumi.sultana18@gmail.com,Nazmun Ara Sultana,30/10/2008,Female,01817726923,01817726923,"Government City College, Chattogram ",Class 12
+asmaprova09@gmail.com,Mayeshah Firooze Prova ,1/4/2005,Female,01312571670,01716601979,Mirpur Cantonment Public School and College ,HSC or Equivalent
+khairunnesaliza@gmail.com,Shahmir Md. Aahnaf,9/11/2012,Male,01717907907,01778899555,Rajuk Uttara Model College ,Class 7
+maudud1234@gmail.com,Sheikh Muhaiminul Islam,25/12/2012,Male,01640918957,01640918957,Rajuk Uttara Model College,Class 8
+hujaifamd967@gmail.com,Jannatul Ferdous,26/4/2010,Female,01712572030,01912867356,Mazid Jarina Foundation School and College ,Class 10
+samihakhushi60@gmail.com,Samiha Khushi,22/6/2013,Female,01760-767656,01761886059,Viqarunnisa Noon School and College ,Class 6
+fahadvaibd@gmail.com,Kazi Abdullah Al Fahad,5/6/2010,Male,01716737978,01732036487,Mazid Zarina Foundation School and College,Class 9
+imteazmahmud9630@gmail.com,ইমতিয়াজ মাহমুদ ,5/7/2012,Male,01405094072,01409246285,মজিদ জরিনা ফাউন্ডেশন স্কুল কলেজ ,Class 8
+imteazmahmud9630@gmail.com, Imteaz Mahmud ,5/7/2012,Male,01405094072,01409246285,মজিদ জরিনা ফাউন্ডেশন স্কুল অ্যান্ড কলেজ,Class 8
+sejutikarmakar150@gmail.com,Sejuti Karmakar ,24/9/2008,Female,01812258644,01622266076,Chittagong college ,Class 12
+fatemaakter.naria@gmail.com,Imteaz Mahmud ,5/7/2012,Male,01405094072,01409246285,মজিদ জরিনা ফাউন্ডেশন স্কুল অ্যান্ড কলেজ ,Class 8
+tashinrahaman119@gmail.com,S.M Tasin Rahman ,1/1/2010,Male,01717754300,01717754300,Majid Jarina Foundation school and College ,Class 10
+moontahabintehasan@gmail.com,Moontaha Binte Hasan,20/4/2009,Female,01727325331,01714313499,Ideal School and college,Class 11
+tashinrahaman119@gmail.com,S.M Tasin Rahman ,1/1/2010,Male,01717754300,01717754300,Mazid Jarina Foundation school and College ,Class 10
+nahidun29@gmail.com,Abdullah Shafi Bin Nahid ,6/8/2014,Male,01974270749,01717635903,Bandar Mohammadia Dakhil Madrasah ,Class 6
+ayonghosh003@gmail.com,AYON GHOSH RUPOM ,28/12/2012,Male,01719119441,01611020175,Singapore int school and QED ACADEMY ,Class 10
+addihan.24@gmail.com,Addihan Muhtasim,1/10/2008,Male,01886820244,01816812074,Chittagong College,Class 12
+naziatnaziat23@gmail.com,Naziat ul Islam Lammim,23/9/2008,Male,01784059189,01711419032,Academia Mirpur (Private Candidate),Class 11
+phoenixlmao23@gmail.com,Taszid Hasan,4/3/2012,Male,01769666137,01713494181,Gazipur Cantonment Public School and College,Class 9
+tamimsyedtanvirtamim@gmail.com,Syed Badsha Basim,27/6/2013,Male,01721409792,01991829331,Mirpur Cantonment Public School And College,Class 5
+alam.riko@gmail.com,Afia  Mubasshira Iqra,9/12/2014,Female,01671842833,01671842833,Gazipur Cantonment Public School and College ,Class 5
+farjanaafsar@gmail.com,Laibah Ahmed bhuiyan,4/11/2012,Female,01847133692,0187505501,Hurdco International School,Class 6
+monjurulrs@gmail.com,H M Safwaan Islam,25/1/2015,Male,01730178651,01797536543,Gazipur Cantonment Public School and College ,Class 4
+nasrinhappy61@gmail.com,Jannatul Ferdaus Diba ,3/2/2011,Female,01712671288,01712671288,MAZID JARINA FOUNDATION SCHOOL AND COLLEGE ,Class 8
+halimanasrin011@gmail.com,Tahsin Tanaz ,2/2/2008,Female,01707390977,01707390977,Mazid Jarina Foundation School & College ,Class 10
+anjumanarefasultana@gmail.com,Arik Kabir Ahmed,11/10/2012,Male,01716535428,01716535428,Rajuk Uttara Model College,Class 7
+zakia.dinajpur@gmail.com,Mashkurah Nushin,16/7/2011,Female,01825599716,01742087271,Rajuk Uttara Model College ,Class 8
+humayun2546@gmail.com,Md Aiyash Nusaer ,11/6/2014,Male,01915376040,01612477804,MCPSC,Class 6
+deyshibage@gmail.com,Ankita Prithi Dey ,10/12/2016,Female,01878798985,01313494386,"Gazipur Cantonment Public School and College, Gazipur ",Class 3
+anas24md@gmail.com,Mohammad Mehrab,27/9/2009,Male,01680794767,01531649109,Chittagong Port Authority High School,Class 9
+saifulazam.sbs@gmail.com,ARIQ RAIYAN NEHAN,5/9/2016,Male,01716587054,01911905020,Gazipur Cantonment Public School and College ,Class 4
+shaheenshanika@gmail.com,Shanika Wardah,21/10/2014,Female,01819809024,01812383545,Chattogram Cantonment public college ,Class 6
+ayashaahnaf1986@gmail.com,Tahsin Nanziba,31/1/2014,Female,01816036524,01817121777,Chattogram Cantonment Public College,Class 6
+a7tahmid@gmail.com,Mohammad Ahnaf Tahmid ,8/8/2008,Male,01842600473,01842600473,Govt. Mohammadpur Model School & College ,Class 10
+3a3417his@gmail.com,Mohammad Wafi,27/8/2010,Male,01721505213,01711505213,Hurdco International School,Class 9
+traderoyon@gmail.com,Hanifur Rahman Oyon,17/10/2011,Male,01966881730,01763415016,MAZID JARINA FOUNDATION SCHOOL AND COLLEGE,Class 8
+kakolisultana38892@gmail.com,RAIFA ISLAM NIDHI,20/2/2012,Female,01916362144,01716867402,Rajuk Uttara Model College,Class 8
+titabhattacharya1978@gmail.com,Apurbo chakroborty,1/1/2012,Male,01719085542,01719085542,মজিদ জরিনা ফাউন্ডেশন স্কুল এন্ড কলেজ ,Class 8
+maisunjanita@gmail.com,Maisun Zanita,11/9/2007,Female,01977032020,01817032020,Viqarunnisa Noon School & College ,Class 12
+shuvojitm01@gmail.com,Shuvojit Mondol,10/10/2007,Male,01743494949,01743494949,Gazipur cantonment public school and college,Class 12
+mashrukhaaurin@gmail.com,Mashrukha Islam Chowdhury ,7/2/2009,Female,01953481001,01859360177,Chattogram College ,Class 12
+armannali0161@gmail.com,Arfat Rahman Saimon,19/11/2025,Male,01600123974,01600123974,Hazera Taju Degree collage,Class 12
+mofidulpwd2004@gmail.com,মো:তাওহীদুল ইসলাম ,25/5/2011,Male,01718818693,01783640846," মজিদ জরিনা ফাউন্ডেশন স্কুল এন্ড কলেজ, নরকলিকাতা,নড়িয়া, শরীয়তপুর। ",Class 8
+fardous05@gmail.com,Mohammad Faizur Rahaman,15/1/2011,Male,01755521326,01726718344,Hurdco International School,Class 8
+rsgupta280978@gmail.com,Adruth Sen Gupta,28/8/2015,Male,01844019153,01791718893,Navy Anchorage School and College Dhaka,Class 3
+awsafkchy.06@gmail.com,Awsaf Kabir Chowdhury,23/12/2006,Male,01318458793,01713274300,Birshrestha Munshi Abdur Rouf Public College,Class 12
+mubasshiratuljannatjanifa@gmail.com,Mmubasshiratul Jannat Janifa,17/12/2009,Female,01911992223,01873065436,Civil Aviation School and College,SSC or Equivalent
+zakisobhan48@gmail.com,Zaki Sobhan Efan ,1/2/2009,Male,01518905255,01711031654,"Progressive Model School, Mymensingh",SSC or Equivalent
+notun1984@gmail.com,NOBOMITA RAI MODAK,5/4/2016,Female,01718259860,01717559076,Gazipur Cantonment Public School & College,Class 4
+daudju1981@gmail.com,Md Navid Amin Tasafi,26/12/2016,Male,01731974299,01625091075,Motijhel Ideal School & College ,Class 3
+ahsanjarif5@gmail.com,Ahsan Awsaf Jarif,26/9/2009,Male,01312160227,01756703039,Govt.Mohammadpur Model School & Collage ,Class 10
+tasnimhasan133@gmail.com,MD ABYAN MAHMUD ,12/8/2015,Male,01941089201,01914047664,Gazipur Cantonment Public School and College  ,Class 4
+anasrahman3640@gmail.com,Md.Anas rahman,15/2/2010,Male,01732573647,01758009328,Majid Jarina Foundation school and College ,Class 10
+rumivet@gmail.com,Shebonti Das,16/3/2016,Female,01731403907,01731403907,William Carey International School,Class 4
+mirjewel@gmail.com,Mir Ahnaf Yusuf ,3/12/2010,Male,01764196929,01764196929,Bogura Zilla school ,Class 9
+zale1612@gmail.com,Arshiya Azeen ,18/7/2010,Female,01715500263,01715500263,HURDCO International School ,Class 8
+khanrittk7@gmail.com,RIKTIK MONDOL,1/1/2011,Female,01319684691,01319684691,Mazid jarina foundation school & college,Class 9
+mofizur@duet.ac.bd,Nafizur Rahman Raiyan,3/12/2011,Male,01741494420,01741494420,Gazipur Cantonment Public School and College,Class 10
+mofizur@duet.ac.bd,Nashidur Rahman Rownak,9/12/2013,Male,01741494420,01741494420,Gazipur Cantonment Public School and College,Class 8
+saifalh420@gmail.com,Saif Al Hasan,14/8/2009,Male,01755010269,01577086134,Govt. Mohammadpur Model School and Collage,Class 10
+naharruba348@gmail.com,তাহনুমা তাসনিম কেকা ,12/1/2025,Female,01908281660,01908281660,Gazipur Cantonment Public School and College ,Class 9
+alaminfree@gmail.com,Nafee Abdullah,23/8/2016,Male,01632146904,01632146904,HURDCO International School,Class 3
+angelbea0006@gmail.com,Fariba Azad,25/2/2007,Female,01797092243,01717940775,Viqarunnissa noon school and college ,Class 12
+kanikazahan@gmail.com,K M Junayed Siddiki,17/5/2014,Male,01727520062,01727520062,Mazid Jarina Foundation school,Class 6
+hillolsza@gmail.com,Hillol Chakma,13/8/2008,Male,01889391422,01881685522,BAF shaheen chattogram ,Class 12
+md2048877@gmail.com,MD RUBATAT HASAN2,22/6/2012,Male,01985152700,01724361414,Mazid Jarina Foundation School And College,Class 8
+hazerakhanom1410@gmail.com,Ishan Bin Khalid Manaf,10/9/2014,Male,01712713314,01712713314,Gazipur Cantonment Public School and college ,Class 4
+md2048877@gmail.com,Md Rubayat Hasan,22/6/2012,Male,01985152700,01724361414,Mazid Jarina Faundation School And. College,Class 8
+md2048877@gmail.com,Md Rubayat Hasan,22/6/2012,Male,01985152700,01724361414,Mazid. jarina Foundation School And college,Class 8
+maksuramitu@gmail.com,Mustaina Raquib,7/12/2015,Female,01980231124,01918138577,Gazipur Cantonment Public School and College ,Class 4
+jssajid237@gmail.com,MD. Jawad Shahriar Sajid,15/7/2011,Male,01843279404,01715470820,Mymensingh Zilla School,Class 8
+mohammadusufali09@gmail.com,Mustafijur Rahman Haolader,29/9/2011,Male,01914112156,01740901078,Mojid Jarina Foundation school and College ,Class 8
+jssajid237@gmail.com,MD. Jawad Shahriar Sajid ,15/7/2011,Male,01843279404,01715470820,Mymensingh Zilla School ,Class 8
+ahmedskthafhim@gmail.com,Sk. Thafhim Ahmed,20/12/2010,Male,01866223804,01611057471,Mirpur Cantonment Public School & College ,Class 9
+sreyoshichakrabarty@gmail.com,Sreyoshi Chakrabarty ,14/10/2010,Female,01927114515,01929539327,Hurdco International School ,Class 9
+lastdragun1@gmail.com,Sanjid Sabab Mahi ,8/2/2006,Male,01629833932,01816930106,Sagor Dighi College ,HSC or Equivalent
+sanjida.riyadh@gmail.com,Sadit Masroor Riyadh ,1/8/2013,Male,01817091535,01817091535,Mirpur Cantonment Public School & College,Class 6
+mazharislam.buet@gmail.com,Hamdan Daaniyal Aayan,16/5/2014,Male,01716859284,01818375747,"Ideal School and College, Motijheel, Dhaka",Class 5
+mahekzuwayria@gmail.com,Mahek Zuwayria,16/12/2009,Female,01972062842,01711389852,HURDCO International School,Class 9
+pulaksec@gmail.com,Tasin HossainbKhan,13/12/2016,Male,01717699292,01911575696,Mirpur Cantonment Public school and College,Class 3
+mostofaa593@gmail.com,Nur Hasnat,1/11/2009,Female,01984992210,01984992210,Viqarunnisa Noon School and College,Class 10
+sa6700407@gmail.com,Suraiya Afreen,27/3/2013,Female,01932348040,01932348040,Viqarunnisa Noon School and College ,Class 6
+zahid459@gmail.com,Zunairah Hayat,20/1/2010,Female,01816695288,01967186439,Hurdco International School ,Class 9
+amibhodrochele242755@gmail.com,Shah Alam ,20/4/2007,Male,01861541099,01861541099,Shaheed police Smriti College ,Class 12
+shakilasabnamsalina@gmail.com,Samsunnahar Rodela,5/7/2011,Female,01716369292,01716369292,Mirpur Cantonment Public School & College ,Class 9
+ahnafmuttaqif2008md@gmail.com,Mohammad Ahnaf Muttaqif Miah,15/5/2008,Male,01797918730,01789004042,HURDCO International School,Class 11
+fahmida39akther@gmail.com,Nusaibah Binte shamim,18/9/2009,Female,01905323163,01715676829,Viqarunnisa Noon School and College,Class 10
+mashrufatania056@gmail.com,S. M. Mustaqim Mahdi,14/2/2013,Male,01715039942,01794445442,"Ideal School and College Motijheel , Dhaka ",Class 6
+zibonnesa2day@gmail.com,Asheque Alahi Billal,30/5/2013,Male,01319347712,01319347712,HURDCO International School ,Class 6
+mdrawfinistiaque5@gmail.com,MD Rawfin Istiaque ,27/9/2010,Male,01716644334,01961174411,MD Rawfin Istiaque ,Class 9
+armaan.ahsan945@gmail.com,Syed Armaan Ahsan,9/6/2007,Male,01713061659,01987787800,Sunbeams School,Class 12
+mohammadusufali09@gmail.com,Mustafijur Rahman Haolader,29/9/2011,Male,01914112156,01740901078,Mojid Jarina Foundation school and College ,Class 8
+halima.tuz.sadia289@gmail.com,Halima-Tuz-Sadia Siddiqui ,28/11/2008,Female,01819-807157 ,01324259595,Ideal School and College ,SSC or Equivalent
+myluckisswitched@gmail.com,Sharaf Tarannum Khan Sabah ,5/8/2009,Female,01310597195,01711459665,"Ideal School and College, Motijheel",Class 10
+jahanadiba2010@gmail.com,Adiba Jahan ,13/8/2011,Female,01848307005,01716-635747 ,Ideal School and college ,Class 8
+mizannila@gmail.com,LAMIYA NUR RAHMAN,16/11/2010,Female,01768901339,01768901339,Afroz Khan Model School,Class 9
+kazisuvra17@gmail.com,Ismatanis Shukriyah,17/1/2014,Female,+8801883385147,+8801712182151,"Ideal School & College, Motijheel, Dhaka",Class 5
+shimisarker8@gmail.com,Rupkatha sarker,2/12/2011,Female,01847112646,01847112646,Rajuk uttara model College ,Class 8
+naznin.it2024@gmail.com,TOKEE UDDIN AFEEF,24/11/2015,Male,01717115092,01717115092,GAZIPUR CANTONMENT PUBLIC SCHOOL AND COLLEGE ,Class 4
+mdiramalhadinafi@gmail.com,Md Iram Al Hadi,2/2/2010,Male,01342266502,01719798187,Gazipur Cantonment Public School And College,Class 9
+rokwsanaislam1984@gmail.com,Jannatul Faria Purnota ,30/3/2010,Female,01754204706,01718602113,Islamabad Collegiate School Khulna,SSC or Equivalent
+mdrafiulhaqueolik@gmail.com,Md.Rafiul Haque Olik,15/2/2008,Male,01923424077,01923424077,Gazipur Cantonment Public School & College,Class 12
+sadidplayzz@gmail.com,Kaysan Sadid,1/5/2011,Male,01822148967,01811419502,Idea school and college,Class 8
+amritot500@gmail.com,Amrito Gabriel Toppo,19/8/2007,Male,01972103304,01306735811,Notre Dame College,Class 12
+mridulakamalprapty@gmail.com,MRIDULA KAMAL PRAPTY ,3/8/2010,Female,01714260035,01714260035,"Unique Progressive School, Mymensingh ",Class 9
+ntasfique@gmail.com,Nur-E-Tajwar Tasfik,30/11/2011,Male,01720911846,01720911846,Gazipur Cantonment Board High School,Class 9
+fy4399595@gmail.com,MD Fahim Hasan ,20/11/2011,Male,01932633775,01932633775,Mymensingh Zilla School ,Class 8
+abdullahmahin590@gmail.com,MD.Mahin Abdullah ,21/9/2010,Male,01718355766,01718355766,Barishal govt model school & college ,Class 9
+jahanadiba2010@gmail.com,Adiba Jahan,13/8/2011,Female,01848307005,01716-635747 ,Ideal School and college ,Class 8
+sadhinabid@gmail.com,AL MASRUR,10/3/2011,Male,01918316727,01918316727,Mymensingh Zila School,Class 8
+sarkermasfiquehasan@gmail.com,Jayed Bin Anis,21/12/2011,Male,01915454095,01616261198,Mymensingh Zilla School,Class 7
+rinatdola772@gmail.com,Ajmaen Jaowad ,14/1/2011,Male,01717503116,01717503116,Mymensingh Zilla school ,Class 8
+mdskubd1@gmail.com,Labia Tahsin,27/7/2010,Female,01972141595,01972141595,Gazipur Cantonment Public School & College  (GPCPSC),Class 9
+barirafiull@gmail.com,Rafiull Bari,24/7/2006,Male,01875733571,01774991599,"Govt. Sundarban Adarsha College, Khulna",HSC or Equivalent
+ahnafabid1990@gmail.com,Nahian Faiza Saki ,6/12/2011,Female,01710153889,01710153889,"Afroz Khan Model School, Mymensingh ",Class 8
+msarnob7@gmail.com,সাদাব ইয়াছির,21/9/2011,Male,01959166419,01959166419,Unique Progressive School Mymensingh ,Class 7
+eliassob1997@gmail.com,MD Ali Adnan Nishat ,8/11/2010,Male,01710185862,01718508703,Rajuk Uttara Model College ,Class 9
+star.wmt@gmail.com,Wasifa Musnad Toushita,24/11/2012,Female,01818719452,01818719452,Summerfield International School,Class 9
+lipikhondokarz@gmail.com,KHONDOKAR ZOBIA ZOBAIR,18/8/2016,Female,01756660133,01716918441,Gazipur Cantonment Public School and Collage,Class 3
+shahjahanshiraj82@gmail.com,AIJA IBNAT,13/3/2018,Female,01719378292,01815090041,PLAYPEN,Class 3
+zakisobhan48@gmail.com,Anurima Sarker Adrita,5/1/2012,Female,01718033790,01715510488,"Unique Progressive School, Mymensingh",Class 7
+mdosman5720216@gmail.com,Md.Osman,22/8/2007,Male,01865627206,01865627206,basha soinik ajit guha college comilla,Class 12
+zakisobhan48@gmail.com,Mahabub Hasan ,15/8/2011,Male,01718977324,1914487009,"Unique Progressive School, Mymensingh",Class 8
+md6040814@gmail.com,Israt jahan maisha,18/12/2008,Female,01941118746,01914889131,Noubahini college Dhaka,Class 12
+nazrulkorea9@gmail.com,Ahana Islam Arohi ,15/11/2025,Female,01726831606,01726831606,Mirpur cantonment public school and college ,Class 3
+md6040814@gmail.com,Israt jahan maisha,18/12/2008,Female,01941118746,01914889131,Noubahini college dhaka,Class 12
+shahjahanshiraj82@gmail.com,AIJA IBNAT,13/3/2018,Female,01719378292,01814090041,PLAYPEN,Class 3
+mdosman5720216@gmail.com,Md.Osman,22/8/2007,Male,01865627206,01865627206,basha soinik ajit guha college comilla,Class 12
+kirito.123official@gmail.com,Mohammad Iqbal Hossain,23/5/2008,Male,01886396437,01834659087,"Noubahini college, Dhaka",Class 12
+nusratjahanmaliha235@gmail.com,Nusrat Jahan ,26/5/2007,Female,01580707544,01704051731,"Noubahini College,Dhaka",Class 12
+kmfaisalshahriar@gmail.com,K M Faisal Shahriar ,28/9/2009,Male,01990005228,01534638885,Birshrestha Noor Mohammad Public College ,Class 10
+alamnabiha578@gmail.com,Norseen Alam Nabiha ,18/2/2009,Female,01982800936,01818322456,Cordova International school and college ,Class 11
+nahida.sultana0508@gmail.com,Tazkia Tazmin Zahin,30/8/2010,Female,01778073507,01715976912,Armed Police Battalion Public School & College ,Class 9
+nusratjahanmaliha235@gmail.com,Abdullah Al Noman Shorder ,28/9/2015,Male,01580707544,01580707544,Adamjee Cantonment Public School ,Class 4
+sultanayasmin.mim366@gmail.com,MUSTAVI RAHMAN AYMAN,8/4/2015,Male,01961406366,01961406366,RAJENDRAPUR CANTONMENT PUBLIC SCHOOL & COLLEGE,Class 4
+samihasaba09@gmail.com,SAMIHA SABA,19/1/2011,Female,01747766899,01712658743,"Armed Police Battalion Public School and College, Bogura",Class 9
+mahmudul5352@gmail.com,Redoyan Hasan Rayan,12/10/2016,Male,01710299460,01718732202,Rajendrapur Cantonment Public School & College,Class 3
+alaminfree@gmail.com,Nafee Abdullah,23/8/2016,Male,01632146904,01632146904,Hurdco International School,Class 3
+shariful.azim@gmail.com,Amina Shehzin Safeerah,28/9/2015,Female,01740205377,01920301193,Ideal school and college banasree,Class 4
+sumaya@duet.ac.bd,Saima Afroz Anamika ,28/8/2010,Female,01712272961,01712618588,Gazipur Cantonment Public School and College ,Class 9
+mirazt2012@gmail.com,Tasin,14/1/2014,Male,01714747370,01714747370,Gazipur Cantonment Public School and College ,Class 7
+noorjahanbagum115@gmail.com,Musa Bin Maksadul Zawwad,10/9/2010,Male,01753066117,01753066117,Gazipur Cantonment Public School And College,Class 8
+mamunur111@gmail.com,Zahin Muntasin,9/5/2015,Male,01909139498,01710900594,Gazipur Cantonment Public School and College,Class 4
+kalersrot@gmail.com,Nafiul Basar,20/2/2012,Male,+8801720545353,01716936789,Mymensingh Zilla school ,Class 8
+aftahineymar@gmail.com,S.M. Aftahi,1/4/2011,Male,01717060181,01717060181,Government Laboratory High School,Class 8
+abumdmohiuddin1@gmail.com,Abu Md. Mohiuddin,3/7/2008,Male,01310865878,01746883634,"নৌবাহিনী কলেজ,ঢাকা",Class 12
+babysaha1112@gmail.com,Shibom Saha ,10/9/2007,Male,01991952818,01991952818,Chittagong College ,Class 12
+jarisha101@gmail.com,Arisha Jannat,27/9/2011,Female,01709995359,01709995359,"Rajendrapur Cantonment Public School and College, Rajendrapur Cantonment, Gazipur",Class 10
+munshiharoon28@gmail.com,Samir Al Ian,18/8/2007,Male,01736993032,01716454145,Saint Joseph College,Class 12
+muniramolly@gmail.com,MAHROOS ALAM MAHEER,16/8/2012,Male,1744290345,"01744290345 , 01680300074",South Point School & College,Class 7
+shahmustofanoor@gmail.com,MUSAAB ABDULLAH NOOR AAYAN,20/4/2010,Male,01711974778,01713368283,MYMENSINGH ZILLA SCHOOL,SSC or Equivalent
+ahnafzarif2022@gmail.com,Tahsin Nanziba,31/1/2014,Female,01816036524,01817121776,Chattogram Cantonment Public College,Class 6
+niti09381@gmail.com,Mimfa Hasan Niti ,8/8/2025,Female,01856533523,01912929376,Rajendrapur Cantonment public school and College ,Class 10
+zonayed5343@gmail.com,Tasmia Zahan,15/6/2007,Female,01716621410,01721604878,Gazipur Cantonment College ,Class 12
+hossainmisty367@gmail.com,Sabik Tazwar ,6/12/2011,Male,01731320275,01716900750,Mymensingh Zilla School ,Class 8
+Email Address,Name,Date of birth,Gender,Phone number,Emergency contact number,Institution name,Class/grade
+ayasaakter331@gmail.com,Saima Rahman,1/11/2010,Female,01775827076,01718524909,Viqurunnisa noon school and college ,Class 9
+hishmazuairiazabin@gmail.com,Zuairia Zabin Hishma,17/7/2007,Female,01970062130,01744292084,Viqarunnisa Noon School and College ,Class 11
+543.raisa@gmail.com,Afsheen Jannath,25/11/2012,Female,01927699289,01779550088,Monipur High School and College,Class 6
+amitava1981feni@gmail.com,Aniruddha Paul,1/7/2011,Male,01712206178,01818861234,Feni Model High School,Class 9
+suktibanik@gmail.com,Sragvi Dass Shoily,25/2/2015,Female,01977146780,01715130572,Holy Cross Girls High School,Class 5
+farahsharmin@outlook.com,Farah Sharmin,25/1/2007,Female,01316400464,01775889975,Dhaka City College,Class 11
+ishmummahdy@gmail.com,Ishmum Mahdy Labeeb ,27/12/2008,Male,01715113106,01753764691,Notre Dame College ,Class 11
+2274c2289rumc@gmail.com,Abu Musa Ashyari,2/9/2008,Male,01754793932,01755700184,Rajuk Uttara Model College,Class 10
+jafrinmahmud5@gmail.com,Zahra Alamgir,28/10/2013,Female,01754500005,01711312090,Mosharref Grammar School ,Class 6
+abdulazizndc26@gmail.com,Abdul Aziz Almas ,20/9/2007,Male,01601401900,01818362650,Notre Dame College ,Class 11
+shababmahmud2012@gmail.com,Shabab Mahmud,19/6/2012,Male,01716640880,01711047931,"Bangladesh International School and College, Mohakhali DOHS",Class 7
+mehrunmary2908@gmail.com,Mahdiya Mehjabeen Rashid,18/8/2011,Female,01816345139,01818392557,Navy Anchorage School and College Dhaka,Class 8
+nuzhatrahman010@gmail.com,Nuzhat Rahman,1/1/2011,Female,01980600264,01980600264,Shiddheswari Girls' High School,Class 9
+somitasultana@gmail.com,Wasifa Imrana Shithi ,3/2/2009,Female,01726071597,01726071597,Unique Progressive School ,SSC or equivalent
+fareehaafsheenchowdhury@gmail.com,Fareeha Afsheen Chowdhury,18/9/2011,Female,01746747474,01746747474,Navy Anchorage School and College Dhaka,Class 8
+zannatunn9@gmail.com,Zannatun nayma,18/1/2007,Female,01712128152,01729208774,College(Dhaka City College),Class 11
+saika.newaz.2021@gmail.com,Abu Shaheer Monon,1/10/2010,Male,01717857761,01552583205,Navy Anchorage school and College Dhaka,Class 9
+sameow07@gmail.com,Sakib Mahmud,15/10/2005,Male,01572968766,01711972313,"Government Azizul Haque College, Bogura",HSC or equivalent / Admision candidate
+ariqmahmudsurid3@gmail.com,Ariq Mahmud Surid,7/1/2007,Male,01826155921,01912109618,Adamjee Cantonment College,HSC or equivalent / Admision candidate
+prothomasaha07@gmail.com,Prina Saha,20/11/2009,Female,01688098491,01711986220,Rajuk Uttara Model College,Class 10
+nubhanewazc@gmail.com,Nubha Newaz Chowdhury ,26/8/2007,Female,01672498530,01672498530,Dhaka City College ,Class 11
+adbelalhossain5516@gmail.com,Amina billah Anushi ,28/12/2012,Female,01624865374,01711685115,Viqarunnisa noon school and college ,Class 7
+aktersamima124@gmail.com,Nosheen Ramisa Prodhan,6/12/2007,Female,01974967740,01738101576,Viqarunnisa Noon School and College ,Class 11
+bbon47566@gmail.com,.,20/5/2025,Male,.,.,.,Class 3
+qayesisaparticipant@gmail.com,Tasnim Al Qayes,22/12/2008,Male,01783250451,01720026139,Sherpur Shahidia Alia (Kamil) Madrasah,Class 11
+avijit.ofcl@gmail.com,Avijit Sen,4/12/2006,Male,01784752204,01711189967,Govt. Shah Sultan College,HSC or equivalent / Admision candidate
+aasim.mahmood.2006@gmail.com,Aasim Mahmood Khan ,22/8/2006,Male,01821944490,01336388664,Mohammadpur Govt. College,Class 11
+moonnur.shafia@gmail.com,Moonnur Shafia ,29/7/2010,Female,01789245210,01817061572,Japan international dream school and college ,Class 9
+kazinafizaanjum@gmail.com,Kazi Nafiza Anjum,14/2/2011,Female,01622198023,01713529848,Japan International Dream School and College ,Class 9
+mahjabintuba27@gmail.com,Tasfiah Mahjabin,12/12/2008,Female,01571046542,01798080096,Ideal School and College ,SSC or equivalent
+firstazmineone@gmail.com,Shah Azmine Mahtab,27/10/2008,Male,01799773958,01832308098,Ramu Cantonment English School and College,SSC or equivalent
+moradana14@gmail.com,Radana Mou Oo,9/7/2014,Female,01715665359,01727033807,SFX Greenherald International School ,Class 3
+avijit.ofcl@gmail.com,Avijit Sen,4/12/2006,Male,01784752204,01711189967,"Govt. Shah Sultan College, Bogura",HSC or equivalent / Admision candidate
+r.u.zaki2k11@gmail.com,REHAN UDDIN ZAKI,17/6/2011,Male,1534667975,01973397456,"Noubahini College, Dhaka ",Class 9
+850zubair@gmail.com,ABDULLAH - AL - JOBAIR,21/2/2006,Male,01632938505,01684548255,Noubahini College Dhaka,HSC or equivalent / Admision candidate
+sultanatakia55@gmail.com,Tasfiat Zannat ,31/7/2013,Female,01717639006,01717639006,Mohammadpur Preparatory school and college ,Class 5
+takiasultana5566@gmail.com,Tasfiat Zannat ,31/7/2013,Female,01717639006,01717639006,Mohammadpur Preparatory school and college ,Class 5
+rakibuddinmd94@gmail.com,Rasfin Rohani ,9/11/2013,Female,01714824534,01740368858,Mohammadpur Preparatory School and College ,Class 6
+muhitrm1008@gmail.com,Muhit Rahman Modho ,9/5/2007,Male,01711507504,01717688900,Notre Dame College ,Class 11
+mriasatbh@gmail.com,TASNEEM ISLAM,12/7/2011,Female,01857978585,01922333579,Gazipur Cantonment Public School and College ,Class 7
+mahinr559@gmail.com,Mahin Rahman,7/3/2010,Male,01835373606,01711153231,Royal Institute of Smart Education,Class 9
+atika.antara@gmail.com,Atika Antara,24/1/2009,Female,01791969795,01791969795,Uttara High School and College ,Class 11
+atika.antara@gmail.com,Atika Antara ,24/1/2009,Female,01791969795,01791969795,Uttara High school and college ,Class 11
+rizvianindita@gmail.com,Arfana Rahman Arisha ,21/12/2015,Female,02795866277,01767488524,International Hope School Bangladesh ,Class 3
+1.shimu.sultana@gmail.com,Sanja Tazriyan,20/6/2012,Female,01688702800,01686958535,Noakhali Government Girls High School,Class 8
+arafat.sadif@gmail.com,Muhammad Arafat Khaiyam,11/7/2007,Male,01400578331,01712074018,Gazipur Cantonment Public School and College,Class 11
+touhid2266@gmail.com,Tanzil Rahman Shabib,15/1/2015,Male,01713365741,01670837034,Bangladesh International School & College,Class 4
+roysulakhir@gmail.com,Md Roysul Akhir ,17/10/2008,Male,01725833680,01522127758,Rajshahi Govt. City College ,Class 12
+tasin.fmt.fm@gmail.com,Ferdous Muhammad Tasin,11/10/2007,Male,01925942663,01331834512,Kushtia Government College ,HSC or equivalent / Admision candidate
+isratjahan245941@gmail.com,Nur Muhammad Miraj,15/8/2012,Male,01712594678,01788564777,Blue Bird High School & College,Class 7
+murchona5142@gmail.com,Anindita Rana Murchona ,18/3/2007,Female,01726691898,01726691898,Holy Cross College,Class 12
+alfishahrinislam@gmail.com,Alfi Shahrin Islam ,24/7/2008,Female,01706410014,01740381472,Birsreshtha Noor Mohammad Public College ,Class 12
+robaisaahmedelsa001@gmail.com,Robaisa Ahmed,2/11/2008,Female,01534682466,01673985869,Viqarunnisa Noon School and College ,SSC or equivalent
+adibatahasinnabila@gmail.com,Adiba Tahasin Nabila,2/9/2007,Female,01875348269,01922528709,College ,Class 11
+maliatabs87@gmail.com,Maliha Tabassum,3/7/2008,Female,01985605671,01943110971,Holy Cross College,Class 12
+overpowergaming652@gmail.com,SIDRATUL RAHMAN SAFWAN ,20/10/2010,Male,01747400201,01911246519,Adamjee Cantonment Public School,Class 9
+fahimkhan15096@gmail.com,Md. Salman Khan Fahim,15/9/2006,Male,01301050274,01957693270,Kushtia Government College ,HSC or equivalent / Admision candidate
+tasinhasnath238@gmail.com,Tahsin Hasanath Tasin ,5/3/2008,Male,01874394562,01758735532,Blue Bird High School and College ,SSC or equivalent
+malihalabiba7@gmail.com,Maliha Labiba,5/2/2008,Female,01717387035,01638581282,Viqarunnisa Noon School and College,Class 11
+skittotube@gmail.com,Most. Taslima Tabassum,12/5/2008,Female,01935341253,01774448415,Tongi Government College,Class 11
+sarowarahmmedsami@gmail.com,Md.Sarowar Ahmed Sami,16/7/2008,Male,01785903778,01785903778,Notre Dame College Dhaka ,Class 11
+aritroa04@gmail.com,Aritro Anabil Chowdhury ,25/12/2012,Male,01314511437,01712829594,Barishal Govt Model School and College ,Class 9
+nahidniaz123@gmail.com,Md Nahid Niaz,25/9/2007,Male,01750962588,01715351097,Notre Dame College Dhaka ,Class 11
+nawshaba63@gmail.com,Nawshaba Binte Yousuf,5/7/2011,Female,01724496716,01730372870,Viqarunnisa Noon School and College,Class 8
+payelkhan2020@gmail.com,Liana Khan,27/8/2011,Female,01712256395,01711984437,Viqarunnisa Noon School and College,Class 8
+farzananasrin97@gmail.com,Adrita Mehzabin,7/6/2012,Female,01826054230,01817524734,Viquarunnisa Noon School and College ,Class 7
+maimunamanhasheza@gmail.com,Maimuna Manha Sheza,30/8/2011,Female,01908692539,01714496903,Viqarunnisa Noon School and College,Class 8
+zaimatariq2808@gmail.com,Zaima Tariq,28/9/2008,Female,01797093166,01720531708,South Breeze School,Class 11
+zaimatariq2808@gmail.com,Ayan Ariz Tariq,26/2/2014,Male,01797093166,01720531708,South Breeze School,Class 5
+biswajitsaha689@gmail.com,Pronita Saha,29/10/2010,Female,01820204689,01795564666,Viquarunnisa Noon School and College ,Class 9
+saika.newaz.2021@gmail.com,Abu Sabir Ronon,4/4/2012,Male,01717857761,01552583205,Navy Anchorage School and College Dhaka,Class 7
+shabecunnahar@gmail.com,Mehfuz Nazifa Islam Leana ,30/5/2012,Female,01682220734,01682220734,Viqarunnisa Noon School and College ,Class 7
+shabecunnahar@gmail.com,Mehfuz Nazifa Islam Leana ,30/5/2012,Female,01682220734,01682220734,Viqarunnisa noon school and College ,Class 7
+farhanaaria17@gmail.com,Aria Sehrish Rahman,30/11/2012,Female,01792510057,01670142814,Viqarunnisa Noon School and College ,Class 7
+sumayia358@gmail.com,Samanta Islam Lamia,6/4/2014,Female,01317107669,01750065257,Viqarunnisa Noon School and College,Class 5
+trixie.shushi@gmail.com,Mahbuba Alam,30/6/2011,Female,01917059451,01916759504,Viqarunnisa Noon School and College ,Class 8
+abdulhai455@gmail.com,Ridita Tawaf,26/8/2011,Female,01962424565,01711227832,Viqarunnisa Noon School and College,Class 7
+mahbubjewelju91@gmail.com,Atiya Fairooz Afra,22/8/2019,Female,01743009796,01721819610,Viqarunnisa Noon School and College ,Class 3
+engr.nayan.eee@gmail.com,Most. Afifa Taiyeba Nuha,31/12/2016,Female,+8801912927620,+8801717274087,Viqarunnisa Noon School & College,Class 3
+mahmuda.my.2016@gmail.com,Bushra Rubana Afroze,23/10/2008,Female,01916566109,01916566109,Glenrich International School,Class 10
+shabecunnahar@gmail.com,Mehfuz Nazifa Islam Leana ,30/5/2012,Female,01682220734,01682220734,Viqarunnisa noon school and College ,Class 7
+nilufar.nasrin87@gmail.com,Nafisa Tasnim Eshal,16/1/2012,Female,01911288606,01732838377,Viqarunnisa Noon School,Class 7
+sarajaved013@gmail.com,SARA JAVED,17/2/2010,Female,01923949860,01923949860,Ideal School and College,Class 10
+tanzilarahaman95@gmail.com,Ariyana Ruhin,3/7/2012,Female,01816587438,01816587438,Viqarunnisa Noon School,Class 7
+majdudabari@gmail.com,Majduda Bari ,7/5/2007,Female,01730571802,01511666585,Viqarunnisa Noon School and College,Class 11
+tanianaharnupur1982@gmail.com,Sahrish Shama ,30/11/2011,Female,+880 1835-656784,+880 1835-656784,Viqarunnisa Noon School & College ,Class 8

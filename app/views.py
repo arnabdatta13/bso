@@ -136,41 +136,46 @@ def check_roll(request):
     else:
         return JsonResponse({"exists": False})
     
+# views.py
+from datetime import datetime
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.db import IntegrityError
+from .models import Student
+
+from datetime import datetime
+from django.contrib import messages
+from django.db import IntegrityError, transaction
+from django.shortcuts import render, redirect
+
 @admin_login_required
 def add_student(request):
     if request.method == 'POST':
-        # Basic fields
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        phone = request.POST.get('phone_number')
-        date_of_birth = request.POST.get('date_of_birth')
+        # Required fields from the form
+        name = (request.POST.get('name') or '').strip()
+        email = (request.POST.get('email') or '').strip()
+        date_of_birth_str = (request.POST.get('date_of_birth') or '').strip()
+        gender = (request.POST.get('gender') or '').strip()
+        phone = (request.POST.get('phone') or '').strip()  # <-- matches input name="phone"
+        emergency_contact_number = (request.POST.get('emergency_contact_number') or '').strip()
+        institution_name = (request.POST.get('institution_name') or '').strip()
+        student_class = (request.POST.get('student_class') or '').strip()
+        print(f"Adding student: {name}, Email: {email}, DOB: {date_of_birth_str}, {gender}, Phone: {phone}, Emergency Contact: {emergency_contact_number}, Institution: {institution_name}, Class: {student_class}")
 
-        # New fields
-        student_class = request.POST.get('student_class')  # Dropdown value
-        category = request.POST.get('category')            # Dropdown value
-        segments = request.POST.getlist('segments')        # Checkbox values as list
+        
 
-        print(f"Adding student: {name}, Email: {email}, Phone: {phone}, DOB: {date_of_birth}, "
-              f"Class: {student_class}, Category: {category}, Segments: {segments}")
-
-        # Create and save student instance
-        student = Student(
+        student = Student.objects.create(
             name=name,
             email=email,
             phone=phone,
-            date_of_birth=date_of_birth,
-            student_class=student_class,
-            category=category,
-            segments=segments
+            emergency_contact_number=emergency_contact_number,
+            gender=gender,
+            institution_name=institution_name,
+            student_class=student_class,     # e.g., "Class 1" .. "Class 12" / "HSC or equivalent" / "Admission candidate"
+        # optional list for JSONField
         )
-        student.save()
-
-        messages.success(
-            request,
-            f"Student {name} added successfully with roll number {student.roll_number}."
-        )
+        
+        messages.success(request, f"Student {student.name or student.email} added successfully with roll number {student.roll_number}.")
         return redirect('dashboard')
 
     return render(request, "add_student.html")
-
-

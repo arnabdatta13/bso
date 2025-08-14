@@ -202,7 +202,6 @@
     <div class="sidebar" id="sidebar">
          <div class="sidebar-inner slimscroll">
             <div id="sidebar-menu" class="sidebar-menu">
-
                <ul>
                   <li class="menu-title">
                      <span>Main Menu</span>
@@ -247,63 +246,68 @@
                     <div class="card card-table">
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="table_id" class="table table-hover table-center mb-0 ">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Segment Name</th>
-                                            <th>Segment Type</th>
-                                            <th>Registration Type</th>
-                                            
-                                            <th class="text-right">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {% for i in students%}
-                                        <tr>
-                                            <td>{{ i.id }}</td>
-                                            
-                                            <td>{{ i.name }}</td>
-                                            <td>{{ i.email }}</td>
-                                            <td>{{ i.phone }}</td>
-                                            <td class="text-right">
-                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sendnotification-{{ forloop.counter }}">
-                                                    Send SMS
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        
-                                        <div class="modal fade" id="sendnotification-{{ forloop.counter }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Send SMS To {{ i.name }}</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form method="post" action="{% url 'send_sms' %}">
-                                                            {% csrf_token %}
-                                                            <div class="form-group">
-                                                                <textarea class="form-control" name="message" rows="4" placeholder="Enter your message here..."></textarea>
-                                                                <input type="text" class="form-control" name="student_id" value="{{ i.id }}" hidden>
-                                                            </div>
-                                                            <button type="submit" class="btn btn-primary">Send SMS</button>
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <table id="table_id" class="table table-hover table-center mb-0">
+                                  <thead>
+                                    <tr>
+                                      <th>Email Address</th>
+                                      <th>Name</th>
+                                      <th>Date of Birth</th>
+                                      <th>Gender</th>
+                                      <th>Phone Number</th>
+                                      <th>Emergency Contact Number</th>
+                                      <th>Institution Name</th>
+                                      <th>Class / Grade</th>
+                                      <th class="text-right">Action</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    {% for i in students %}
+                                    <tr>
+                                      <td>{{ i.email|default:"—" }}</td>
+                                      <td>{{ i.name|default:"—" }}</td>
+                                      <td>{{ i.date_of_birth|date:"Y-m-d" }}</td>
+                                      <td>{{ i.gender|default:"—" }}</td>
+                                      <td>{{ i.phone|default:"—" }}</td>
+                                      <td>{{ i.emergency_contact_number|default:"—" }}</td>
+                                      <td>{{ i.institution_name|default:"—" }}</td>
+                                      <td>{{ i.student_class|default:"—" }}</td>
+                                      <td class="text-right">
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sendnotification-{{ forloop.counter }}">
+                                          Send SMS
+                                        </button>
+                                      </td>
+                                    </tr>
 
-                                        {% endfor %}
-                                    </tbody>
+                                    <!-- Per-student SMS modal -->
+                                    <div class="modal fade" id="sendnotification-{{ forloop.counter }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Send SMS To {{ i.name|default:"Student" }}</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form method="post" action="{% url 'send_sms' %}">
+                                              {% csrf_token %}
+                                              <div class="form-group">
+                                                <textarea class="form-control" name="message" rows="4" placeholder="Enter your message here..."></textarea>
+                                                <input type="text" class="form-control" name="student_id" value="{{ i.id }}" hidden>
+                                              </div>
+                                              <button type="submit" class="btn btn-primary">Send SMS</button>
+                                            </form>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {% endfor %}
+                                  </tbody>
                                 </table>
                             </div>
-                            
                         </div>
                     </div>
                 </div>

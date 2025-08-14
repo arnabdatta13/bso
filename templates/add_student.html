@@ -243,91 +243,100 @@
                             <form method="post" action="{% url 'add-student' %}" enctype="multipart/form-data">
                               {% csrf_token %}
                               <div class="col-12">
-                                  <h5 class="form-title"><span>Add Student</span></h5>
+                                <h5 class="form-title"><span>Add Student</span></h5>
                               </div>
 
-                              <!-- Name -->
+                              <!-- Name (required) -->
                               <div class="col-sm-11">
-                                  <div class="form-group">
-                                      <label>Name</label>
-                                      <input type="text" class="form-control" name="name">
-                                  </div>
+                                <div class="form-group">
+                                  <label>Name</label>
+                                  <input type="text" class="form-control" name="name" required>
+                                </div>
                               </div>
 
-                              <!-- Email -->
+                              <!-- Email Address (required) -->
                               <div class="col-sm-11">
-                                  <div class="form-group">
-                                      <label>Email</label>
-                                      <input type="email" class="form-control" name="email">
-                                  </div>
+                                <div class="form-group">
+                                  <label>Email Address</label>
+                                  <input type="email" class="form-control" name="email" required>
+                                </div>
                               </div>
 
-                              <!-- Phone Number -->
+                              <!-- Date of Birth (required) -->
                               <div class="col-sm-11">
-                                  <div class="form-group">
-                                      <label>Phone Number</label>
-                                      <input type="number" class="form-control" name="phone_number">
-                                  </div>
+                                <div class="form-group">
+                                  <label>Date of Birth</label>
+                                  <input type="date" class="form-control" name="date_of_birth" >
+                                </div>
                               </div>
 
-                              <!-- Date of Birth -->
+                              <!-- Gender (required) -->
                               <div class="col-sm-11">
-                                  <div class="form-group">
-                                      <label>Date of Birth</label>
-                                      <input type="date" class="form-control" name="date_of_birth" required>
-                                  </div>
+                                <div class="form-group">
+                                  <label>Gender</label>
+                                  <select class="form-control" name="gender" >
+                                    <option value="" selected disabled>Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                  </select>
+                                </div>
                               </div>
 
-                              <!-- Class Dropdown -->
+                              <!-- Phone Number (required) -> maps to model field 'phone' -->
                               <div class="col-sm-11">
-                                  <div class="form-group">
-                                      <label>Class</label>
-                                      <select class="form-control" name="student_class" >
-                                          <option value="">Select Class</option>
-                                          <option value="Class 10">Class 10</option>
-                                          <option value="Class 11">Class 11</option>
-                                          <option value="Class 12">Class 12</option>
-                                      </select>
-                                  </div>
+                                <div class="form-group">
+                                  <label>Phone Number</label>
+                                  <input type="tel" class="form-control" name="phone" pattern="[\d+\-\s]{6,20}" required>
+                                  <small class="form-text text-muted">Include country code if possible (e.g., +8801…)</small>
+                                </div>
                               </div>
 
-                              <!-- Category Dropdown -->
+                              <!-- Emergency Contact Number (required) -->
                               <div class="col-sm-11">
-                                  <div class="form-group">
-                                      <label>Category</label>
-                                      <select class="form-control" name="category" >
-                                          <option value="">Select Category</option>
-                                          <option value="Science">Science</option>
-                                          <option value="Arts">Arts</option>
-                                          <option value="Commerce">Commerce</option>
-                                      </select>
-                                  </div>
+                                <div class="form-group">
+                                  <label>Emergency Contact Number</label>
+                                  <input type="tel" class="form-control" name="emergency_contact_number" pattern="[\d+\-\s]{6,20}" required>
+                                </div>
                               </div>
 
-                              <!-- Segments Multiple Checkboxes -->
+                              <!-- Institution Name (required) -->
                               <div class="col-sm-11">
-                                  <div class="form-group">
-                                      <label>Segments</label>
-                                      <div class="form-check">
-                                          <input class="form-check-input" type="checkbox" name="segments" value="Segment A" id="segmentA">
-                                          <label class="form-check-label" for="segmentA">Segment A</label>
-                                      </div>
-                                      <div class="form-check">
-                                          <input class="form-check-input" type="checkbox" name="segments" value="Segment B" id="segmentB">
-                                          <label class="form-check-label" for="segmentB">Segment B</label>
-                                      </div>
-                                      <div class="form-check">
-                                          <input class="form-check-input" type="checkbox" name="segments" value="Segment C" id="segmentC">
-                                          <label class="form-check-label" for="segmentC">Segment C</label>
-                                      </div>
-                                  </div>
+                                <div class="form-group">
+                                  <label>Institution Name</label>
+                                  <input type="text" class="form-control" name="institution_name" required>
+                                </div>
                               </div>
 
-                              <!-- Submit Button -->
+                              <!-- Class / Grade (required) -> maps to 'student_class' -->
+                              <div class="col-sm-11">
+                                <div class="form-group">
+                                  <label>Class / Grade</label>
+                                  <select class="form-control" name="student_class" required>
+                                    <option value="" selected disabled>Select Class / Grade</option>
+                                    <option value="Class 1">Class 1</option>
+                                    <option value="Class 2">Class 2</option>
+                                    <option value="Class 3">Class 3</option>
+                                    <option value="Class 4">Class 4</option>
+                                    <option value="Class 5">Class 5</option>
+                                    <option value="Class 6">Class 6</option>
+                                    <option value="Class 7">Class 7</option>
+                                    <option value="Class 8">Class 8</option>
+                                    <option value="Class 9">Class 9</option>
+                                    <option value="Class 10">Class 10</option>
+                                    <option value="Class 11">Class 11</option>
+                                    <option value="Class 12">Class 12</option>
+                                    <option value="HSC or equivalent">HSC or equivalent</option>
+                                    <option value="Admission candidate">Admission candidate</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <!-- Submit -->
                               <div class="col-12">
-                                  <button type="submit" class="btn btn-primary">Add Student</button>
+                                <button type="submit" class="btn btn-primary">Add Student</button>
                               </div>
-                          </form>
+                            </form>
                         </div>
                     </div>
                 </div>
