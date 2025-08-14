@@ -24,6 +24,16 @@ def import_students_from_csv(csv_file):
                 print(f"❌ Invalid date for {email or 'Unknown Email'}, skipped.")
                 continue
 
+            # Check for duplicate email
+            if email and Student.objects.filter(email=email).exists():
+                print(f"⚠️ Email {email} already exists, skipped.")
+                continue
+
+            # Check for duplicate phone number
+            if phone and Student.objects.filter(phone=phone).exists():
+                print(f"⚠️ Phone {phone} already exists, skipped.")
+                continue
+
             # Segments (optional)
             segments = []
             if 'Segments' in row and row['Segments']:
